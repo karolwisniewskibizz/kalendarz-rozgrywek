@@ -19,7 +19,7 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - run: python generate_calendar.py
+      - run: python pobierz_kalendarz.py
 
       - name: Commit changes
         run: |
