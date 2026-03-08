@@ -1,5 +1,8 @@
 name: Update calendar
 
+permissions:
+  contents: write
+
 on:
   schedule:
     - cron: "0 */6 * * *"
