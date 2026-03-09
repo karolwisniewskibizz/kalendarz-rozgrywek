@@ -13,27 +13,51 @@ events = []
 
 for r in rows:
     cols = [c.text.strip() for c in r.find_all("td")]
-    if len(cols) < 4:
+
+    if len(cols) < 5:
         continue
 
-    home = cols[1]
-    away = cols[2]
-    date = cols[3]
+    date_str = cols[0]      # np. 08.03.2026
+    time_str = cols[1]      # np. 11:00
+    home = cols[2]
+    away = cols[3]
 
-    events.append((home, away, date))
+    if not time_str or time_str == "-":
+        continue
 
-with open("calendar.ics", "w") as f:
+    try:
+        start = datetime.strptime(f"{date_str} {time_str}", "%d.%m.%Y %H:%M")
+    except:
+        continue
+
+    end = start + timedelta(minutes=120)
+
+    events.append({
+        "home": home,
+        "away": away,
+        "start": start,
+        "end": end
+    })
+
+with open("calendar.ics", "w", encoding="utf-8") as f:
 
     f.write("BEGIN:VCALENDAR\n")
     f.write("VERSION:2.0\n")
+    f.write("PRODID:-//Jaguar Calendar//PL\n")
 
     for e in events:
 
-        uid = e[0].replace(" ","")+"-"+e[1].replace(" ","")
+        uid = f"{e['start'].strftime('%Y%m%d')}-{e['home']}-{e['away']}".replace(" ", "")
+
+        dtstart = e["start"].strftime("%Y%m%dT%H%M00")
+        dtend = e["end"].strftime("%Y%m%dT%H%M00")
 
         f.write("BEGIN:VEVENT\n")
         f.write(f"UID:{uid}@jaguar\n")
-        f.write(f"SUMMARY:{e[0]} - {e[1]}\n")
+        f.write(f"DTSTAMP:{datetime.utcnow().strftime('%Y%m%dT%H%M%SZ')}\n")
+        f.write(f"DTSTART:{dtstart}\n")
+        f.write(f"DTEND:{dtend}\n")
+        f.write(f"SUMMARY:{e['home']} - {e['away']}\n")
         f.write("END:VEVENT\n")
 
     f.write("END:VCALENDAR\n")
