@@ -23,6 +23,7 @@ jobs:
       - run: pip install -r requirements.txt
 
       - run: python pobierz-kalendarz.py
+      - run: cat calendar.ics
 
       - name: Commit changes
         run: |
