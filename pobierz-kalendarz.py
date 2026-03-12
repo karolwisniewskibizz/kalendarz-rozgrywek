@@ -32,44 +32,60 @@ months = {
 events = []
 
 for r in rows:
-
     cols = [c.get_text(strip=True) for c in r.find_all("td")]
 
+    # Pomijamy nagłówki i wiersze z za mało kolumnami
     if len(cols) < 6:
         continue
 
-    home = cols[1]
-    away = cols[3]
-    date_text = cols[5]
+    home = cols[1].strip()
+    away = cols[3].strip()
+    date_text = cols[5].strip()
 
-    m = re.search(r"(\d{1,2}) (\w+) (\d{4})", date_text)
+    # Jeśli data jest pusta, pomijamy
+    if not date_text:
+        continue
+
+    # Szukamy daty w formacie: "dzień miesiąc rok godzina:minuta" lub "dzień miesiąc rok"
+    m = re.search(r"(\d{1,2})\s+(\w+)\s+(\d{4})", date_text)
 
     if not m:
+        print(f"Nie znaleziono daty w: {date_text}")
         continue
 
     day = int(m.group(1))
-    month_name = m.group(2)
+    month_name = m.group(2).lower()
     year = int(m.group(3))
 
     if month_name not in months:
+        print(f"Nieznany miesiąc: {month_name}")
         continue
 
     month = months[month_name]
 
-    t = re.search(r"(\d{2}:\d{2})", date_text)
+    # Szukamy czasu w formacie "HH:MM"
+    t = re.search(r"(\d{2}):(\d{2})", date_text)
 
     if t:
-        time = t.group(1)
+        time = t.group(0)
     else:
         time = "12:00"
 
-    start = datetime.strptime(f"{year}-{month}-{day} {time}", "%Y-%m-%d %H:%M")
+    try:
+        start = datetime.strptime(f"{year}-{month:02d}-{day:02d} {time}", "%Y-%m-%d %H:%M")
+    except ValueError as e:
+        print(f"Błąd parsowania daty: {year}-{month}-{day} {time}, błąd: {e}")
+        continue
+
     end = start + timedelta(minutes=120)
 
     uid_src = f"{year}-{month}-{day}-{home}-{away}".lower()
     uid = hashlib.md5(uid_src.encode()).hexdigest()
 
     events.append((home, away, start, end, uid))
+    print(f"Dodano mecz: {home} - {away} na dzień {start}")
+
+print(f"\nZnalezione mecze: {len(events)}")
 
 with open("calendar.ics","w",encoding="utf-8") as f:
 
@@ -88,3 +104,5 @@ with open("calendar.ics","w",encoding="utf-8") as f:
         f.write("END:VEVENT\n")
 
     f.write("END:VCALENDAR\n")
+
+print(f"Plik calendar.ics został utworzony z {len(events)} meczami.")
