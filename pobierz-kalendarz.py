@@ -6,10 +6,23 @@ import hashlib
 
 URL = "https://www.pomorskifutbol.pl/mecze.php?id=4623&id_klub=7470"
 
-html = requests.get(URL).text
+html = requests.get(URL).content
 soup = BeautifulSoup(html, "html.parser")
 
-rows = soup.find_all("tr")
+tables = soup.find_all("table")
+
+# tabela z meczami to zwykle druga lub trzecia
+match_table = None
+for t in tables:
+    if "kolejka" in t.get_text().lower():
+        match_table = t
+        break
+
+if match_table is None:
+    print("Nie znaleziono tabeli z meczami")
+    exit()
+
+rows = match_table.find_all("tr")
 
 months = {
     "stycznia":1,"lutego":2,"marca":3,"kwietnia":4,"maja":5,"czerwca":6,
@@ -22,15 +35,12 @@ for r in rows:
 
     cols = [c.get_text(strip=True) for c in r.find_all("td")]
 
-    if len(cols) != 6:
+    if len(cols) < 6:
         continue
 
     home = cols[1]
     away = cols[3]
     date_text = cols[5]
-
-    if not home or not away:
-        continue
 
     m = re.search(r"(\d{1,2}) (\w+) (\d{4})", date_text)
 
