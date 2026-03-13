@@ -54,7 +54,7 @@ def travel_minutes(coord1, coord2):
     dist_km = geodesic(coord1, coord2).km
     avg_speed = 70  # km/h
     minutes = dist_km / avg_speed * 60
-    return round_quarter(minutes)
+    return int(math.ceil(minutes / 15.0) * 15)  # <--- całkowite minuty
 
 for r in rows:
     cols = [c.get_text(strip=True) for c in r.find_all("td")]
