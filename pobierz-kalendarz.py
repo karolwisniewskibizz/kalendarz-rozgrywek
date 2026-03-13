@@ -33,11 +33,9 @@ if not tables:
 
 # Używamy pierwszej tabeli
 match_table = tables[0]
-
 print(f"Znaleziono {len(tables)} tabel, używam tabeli 0")
 
 rows = match_table.find_all("tr")
-
 print(f"Liczba wierszy w tabeli: {len(rows)}")
 
 months = {
@@ -51,19 +49,14 @@ def round_quarter(minutes):
     return int(math.ceil(minutes / 15.0) * 15)
 
 def travel_minutes(coord1, coord2):
-
     dist_km = geodesic(coord1, coord2).km
-
     avg_speed = 70
-
     minutes = dist_km / avg_speed * 60
-
     return round_quarter(minutes)
 
 for r in rows:
 
     cols = [c.get_text(strip=True) for c in r.find_all("td")]
-
     if len(cols) < 6:
         continue
 
@@ -71,13 +64,11 @@ for r in rows:
     away = cols[3].strip()
     date_text = cols[5].strip()
 
-    print(cols)
-
     if not date_text:
         continue
 
-    m = re.search(r"(\d{1,2})\s+(\w+)\s+(\d{4})", date_text)
-
+    # obsługa dat typu "23/24. maja 2026"
+    m = re.search(r"(\d{1,2})(?:/\d{1,2})?\s+(\w+)\s+(\d{4})", date_text)
     if not m:
         print(f"Nie znaleziono daty w: {date_text}")
         continue
@@ -92,8 +83,8 @@ for r in rows:
 
     month = months[month_name]
 
+    # czas w formacie HH:MM
     t = re.search(r"(\d{2}):(\d{2})", date_text)
-
     if t:
         time = t.group(0)
     else:
@@ -105,7 +96,7 @@ for r in rows:
             "%Y-%m-%d %H:%M"
         )
     except ValueError as e:
-        print(f"Błąd parsowania daty: {date_text}")
+        print(f"Błąd parsowania daty: {date_text}, {e}")
         continue
 
     end = start + timedelta(minutes=120)
@@ -114,10 +105,10 @@ for r in rows:
     uid = hashlib.md5(uid_src.encode()).hexdigest()
 
     location = ""
-
     if home in stadiums:
         location = stadiums[home]["address"]
 
+    # wydarzenie meczu
     events.append({
         "uid": uid,
         "title": f"{home} - {away}",
@@ -128,17 +119,11 @@ for r in rows:
 
     print(f"Dodano mecz: {home} - {away} ({start})")
 
-    # WYJAZD jeśli Jaguar gra na wyjeździe
+    # WYJAZD jeśli Jaguar jest gościem
     if HOME_TEAM in away and home in stadiums:
-
-        coord = (
-            stadiums[home]["lat"],
-            stadiums[home]["lon"]
-        )
-
+        coord = (stadiums[home]["lat"], stadiums[home]["lon"])
         travel = travel_minutes(HOME_COORD, coord)
-
-        depart = start - timedelta(minutes=(travel + 30))
+        depart = start - timedelta(minutes=(travel + 30))  # 30 min przed meczem
 
         events.append({
             "uid": uid + "-travel",
@@ -159,19 +144,7 @@ with open("calendar.ics","w",encoding="utf-8") as f:
     f.write("PRODID:-//Jaguar Calendar//PL\n")
 
     for e in events:
-
         f.write("BEGIN:VEVENT\n")
         f.write(f"UID:{e['uid']}@jaguar\n")
         f.write(f"DTSTAMP:{datetime.utcnow().strftime('%Y%m%dT%H%M%SZ')}\n")
-        f.write(f"DTSTART:{e['start'].strftime('%Y%m%dT%H%M00')}\n")
-        f.write(f"DTEND:{e['end'].strftime('%Y%m%dT%H%M00')}\n")
-        f.write(f"SUMMARY:{e['title']}\n")
-
-        if e["location"]:
-            f.write(f"LOCATION:{e['location']}\n")
-
-        f.write("END:VEVENT\n")
-
-    f.write("END:VCALENDAR\n")
-
-print(f"\nPlik calendar.ics utworzony z {len(events)} wydarzeniami.")
+        f.write(f"DTSTART:{e['start'].strftime('%Y%m%dT%H%M00')}\
