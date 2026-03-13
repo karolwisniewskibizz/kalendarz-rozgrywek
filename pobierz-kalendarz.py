@@ -5,7 +5,6 @@ import re
 import hashlib
 import json
 import math
-
 from geopy.distance import geodesic
 
 URL = "https://www.pomorskifutbol.pl/mecze.php?id=4623&id_klub=7470"
@@ -50,7 +49,7 @@ def round_quarter(minutes):
 
 def travel_minutes(coord1, coord2):
     dist_km = geodesic(coord1, coord2).km
-    avg_speed = 70
+    avg_speed = 70  # km/h
     minutes = dist_km / avg_speed * 60
     return round_quarter(minutes)
 
@@ -66,8 +65,8 @@ for r in rows:
     if not date_text:
         continue
 
-    # obsługa dat typu "23/24. maja 2026"
-    m = re.search(r"(\d{1,2})(?:/\d{1,2})?\s+(\w+)\s+(\d{4})", date_text)
+    # Nowy regex: obsługa "1. maja 2026" i "23/24. maja 2026"
+    m = re.search(r"(\d{1,2})(?:/\d{1,2})?\.?\s+(\w+)\s+(\d{4})", date_text)
     if not m:
         print(f"Nie znaleziono daty w: {date_text}")
         continue
@@ -137,7 +136,6 @@ for r in rows:
 print(f"\nZnalezione wydarzenia: {len(events)}")
 
 with open("calendar.ics","w",encoding="utf-8") as f:
-
     f.write("BEGIN:VCALENDAR\n")
     f.write("VERSION:2.0\n")
     f.write("PRODID:-//Jaguar Calendar//PL\n")
