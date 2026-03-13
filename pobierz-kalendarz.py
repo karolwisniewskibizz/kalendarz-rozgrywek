@@ -116,8 +116,12 @@ for r in rows:
 
     print(f"Dodano mecz: {home} - {away} ({start})")
 
+    # sprawdzanie gospodarza/gościa
+    is_home = HOME_TEAM.lower() in cols[1].lower()
+    is_away = HOME_TEAM.lower() in cols[3].lower()
+
     # WYJAZD i POWRÓT jeśli Jaguar jest gościem
-    if cols[1] != HOME_TEAM and cols[3] == HOME_TEAM and home in stadiums:
+    if is_away and home in stadiums:
         coord = (stadiums[home]["lat"], stadiums[home]["lon"])
         travel = travel_minutes(HOME_COORD, coord)
         depart = start - timedelta(minutes=(travel + 30))  # 30 min przed meczem
