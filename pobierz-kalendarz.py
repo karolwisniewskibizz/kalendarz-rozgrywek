@@ -11,6 +11,12 @@ soup = BeautifulSoup(html, "html.parser")
 
 tables = soup.find_all("table")
 
+# Debug: Pokaż wszystkie znalezione tabele
+print(f"Znaleziono {len(tables)} tabel(i)")
+for i, t in enumerate(tables):
+    print(f"\nTabela {i}:")
+    print(t.get_text()[:200])
+
 # tabela z meczami to zwykle druga lub trzecia
 match_table = None
 for t in tables:
