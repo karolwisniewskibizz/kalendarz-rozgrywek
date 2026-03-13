@@ -55,7 +55,6 @@ def travel_minutes(coord1, coord2):
     return round_quarter(minutes)
 
 for r in rows:
-
     cols = [c.get_text(strip=True) for c in r.find_all("td")]
     if len(cols) < 6:
         continue
@@ -147,4 +146,13 @@ with open("calendar.ics","w",encoding="utf-8") as f:
         f.write("BEGIN:VEVENT\n")
         f.write(f"UID:{e['uid']}@jaguar\n")
         f.write(f"DTSTAMP:{datetime.utcnow().strftime('%Y%m%dT%H%M%SZ')}\n")
-        f.write(f"DTSTART:{e['start'].strftime('%Y%m%dT%H%M00')}\
+        f.write(f"DTSTART:{e['start'].strftime('%Y%m%dT%H%M00')}\n")
+        f.write(f"DTEND:{e['end'].strftime('%Y%m%dT%H%M00')}\n")
+        f.write(f"SUMMARY:{e['title']}\n")
+        if e["location"]:
+            f.write(f"LOCATION:{e['location']}\n")
+        f.write("END:VEVENT\n")
+
+    f.write("END:VCALENDAR\n")
+
+print(f"\nPlik calendar.ics utworzony z {len(events)} wydarzeniami.")
