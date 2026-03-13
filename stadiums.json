@@ -1,0 +1,32 @@
+{
+  "Jaguar Gdańsk": {
+    "name": "Arena Jaguar",
+    "address": "ul. Budowlanych 49, 80-298 Gdańsk",
+    "lat": 54.3776,
+    "lon": 18.4701
+  },
+  "Pomezania Malbork": {
+    "name": "Stadion OSiR",
+    "address": "ul. Toruńska 60, 82-200 Malbork",
+    "lat": 54.0409,
+    "lon": 19.0266
+  },
+  "AP Merchel Kolbudy": {
+    "name": "Boisko Kolbudy",
+    "address": "ul. Wybickiego 33, 83-050 Kolbudy",
+    "lat": 54.2694,
+    "lon": 18.4661
+  },
+  "Gedania II Gdańsk": {
+    "name": "Stadion Gedanii",
+    "address": "ul. Hallera 201, 80-502 Gdańsk",
+    "lat": 54.4095,
+    "lon": 18.6163
+  },
+  "Bałtyk II Gdynia": {
+    "name": "Stadion Bałtyku",
+    "address": "ul. Olimpijska 5, 81-538 Gdynia",
+    "lat": 54.4991,
+    "lon": 18.5403
+  }
+}
