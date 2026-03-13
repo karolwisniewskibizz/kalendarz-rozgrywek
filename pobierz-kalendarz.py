@@ -116,21 +116,34 @@ for r in rows:
 
     print(f"Dodano mecz: {home} - {away} ({start})")
 
-    # WYJAZD jeśli Jaguar jest gościem
-    if HOME_TEAM in away and home in stadiums:
+    # WYJAZD i POWRÓT jeśli Jaguar jest gościem
+    if cols[1] != HOME_TEAM and cols[3] == HOME_TEAM and home in stadiums:
         coord = (stadiums[home]["lat"], stadiums[home]["lon"])
         travel = travel_minutes(HOME_COORD, coord)
         depart = start - timedelta(minutes=(travel + 30))  # 30 min przed meczem
 
+        # Wyjazd
         events.append({
             "uid": uid + "-travel",
             "title": f"Wyjazd na mecz: {home}",
             "start": depart,
             "end": depart + timedelta(minutes=travel),
+            "location": stadiums[HOME_KEY]["address"]
+        })
+
+        # Powrót po meczu
+        return_start = end
+        return_end = end + timedelta(minutes=travel)
+
+        events.append({
+            "uid": uid + "-return",
+            "title": f"Powrót z meczu: {home}",
+            "start": return_start,
+            "end": return_end,
             "location": stadiums[home]["address"]
         })
 
-        print(f"Wyjazd na {home}: {travel} min jazdy")
+        print(f"Wyjazd na {home}: {travel} min, powrót po meczu")
 
 print(f"\nZnalezione wydarzenia: {len(events)}")
 
