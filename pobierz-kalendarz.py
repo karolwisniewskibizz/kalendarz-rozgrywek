@@ -6,38 +6,39 @@ import hashlib
 import json
 import math
 
-### NEW
 from geopy.distance import geodesic
 
 URL = "https://www.pomorskifutbol.pl/mecze.php?id=4623&id_klub=7470"
 
-### NEW – wczytanie stadionów
+HOME_TEAM = "Jaguar"
+HOME_KEY = "Jaguar Gdańsk"
+
+# wczytanie stadionów
 with open("stadiums.json", encoding="utf-8") as f:
     stadiums = json.load(f)
 
-HOME_TEAM = "Jaguar"
-HOME_COORD = (stadiums["Jaguar Gdańsk"]["lat"], stadiums["Jaguar Gdańsk"]["lon"])
+HOME_COORD = (
+    stadiums[HOME_KEY]["lat"],
+    stadiums[HOME_KEY]["lon"]
+)
 
 html = requests.get(URL).content
 soup = BeautifulSoup(html, "html.parser")
 
 tables = soup.find_all("table")
 
-months_list = ["stycznia","lutego","marca","kwietnia","maja","czerwca",
-               "lipca","sierpnia","września","października","listopada","grudnia"]
-
-match_table = None
-
-for t in tables:
-    if any(m in t.get_text().lower() for m in months_list):
-        match_table = t
-        break
-
-if match_table is None:
-    print("Nie znaleziono tabeli z meczami")
+if not tables:
+    print("Brak tabel na stronie")
     exit()
 
+# Używamy pierwszej tabeli
+match_table = tables[0]
+
+print(f"Znaleziono {len(tables)} tabel, używam tabeli 0")
+
 rows = match_table.find_all("tr")
+
+print(f"Liczba wierszy w tabeli: {len(rows)}")
 
 months = {
     "stycznia":1,"lutego":2,"marca":3,"kwietnia":4,"maja":5,"czerwca":6,
@@ -46,18 +47,16 @@ months = {
 
 events = []
 
-### NEW
 def round_quarter(minutes):
-    return math.ceil(minutes/15)*15
+    return int(math.ceil(minutes / 15.0) * 15)
 
-### NEW – szacowanie czasu jazdy
 def travel_minutes(coord1, coord2):
 
-    dist = geodesic(coord1, coord2).km
+    dist_km = geodesic(coord1, coord2).km
 
-    avg_speed = 70  # km/h – średnia dla tras regionalnych
+    avg_speed = 70
 
-    minutes = dist/avg_speed*60
+    minutes = dist_km / avg_speed * 60
 
     return round_quarter(minutes)
 
@@ -72,12 +71,15 @@ for r in rows:
     away = cols[3].strip()
     date_text = cols[5].strip()
 
+    print(cols)
+
     if not date_text:
         continue
 
     m = re.search(r"(\d{1,2})\s+(\w+)\s+(\d{4})", date_text)
 
     if not m:
+        print(f"Nie znaleziono daty w: {date_text}")
         continue
 
     day = int(m.group(1))
@@ -85,6 +87,7 @@ for r in rows:
     year = int(m.group(3))
 
     if month_name not in months:
+        print(f"Nieznany miesiąc: {month_name}")
         continue
 
     month = months[month_name]
@@ -96,7 +99,14 @@ for r in rows:
     else:
         time = "12:00"
 
-    start = datetime.strptime(f"{year}-{month:02d}-{day:02d} {time}", "%Y-%m-%d %H:%M")
+    try:
+        start = datetime.strptime(
+            f"{year}-{month:02d}-{day:02d} {time}",
+            "%Y-%m-%d %H:%M"
+        )
+    except ValueError as e:
+        print(f"Błąd parsowania daty: {date_text}")
+        continue
 
     end = start + timedelta(minutes=120)
 
@@ -105,10 +115,8 @@ for r in rows:
 
     location = ""
 
-    ### NEW – ustalenie stadionu
     if home in stadiums:
-        st = stadiums[home]
-        location = st["address"]
+        location = stadiums[home]["address"]
 
     events.append({
         "uid": uid,
@@ -118,26 +126,31 @@ for r in rows:
         "location": location
     })
 
-    ### NEW – wyjazd jeśli Jaguar gra na wyjeździe
+    print(f"Dodano mecz: {home} - {away} ({start})")
+
+    # WYJAZD jeśli Jaguar gra na wyjeździe
     if HOME_TEAM in away and home in stadiums:
 
-        coord = (stadiums[home]["lat"], stadiums[home]["lon"])
+        coord = (
+            stadiums[home]["lat"],
+            stadiums[home]["lon"]
+        )
 
         travel = travel_minutes(HOME_COORD, coord)
 
-        depart = start - timedelta(minutes=travel+30)
+        depart = start - timedelta(minutes=(travel + 30))
 
         events.append({
-            "uid": uid+"-travel",
+            "uid": uid + "-travel",
             "title": f"Wyjazd na mecz: {home}",
             "start": depart,
             "end": depart + timedelta(minutes=travel),
             "location": stadiums[home]["address"]
         })
 
-        print(f"Wyjazd: {home}, dystans ~{travel} min")
+        print(f"Wyjazd na {home}: {travel} min jazdy")
 
-print(f"Znalezione wydarzenia: {len(events)}")
+print(f"\nZnalezione wydarzenia: {len(events)}")
 
 with open("calendar.ics","w",encoding="utf-8") as f:
 
@@ -161,4 +174,4 @@ with open("calendar.ics","w",encoding="utf-8") as f:
 
     f.write("END:VCALENDAR\n")
 
-print("calendar.ics utworzony")
+print(f"\nPlik calendar.ics utworzony z {len(events)} wydarzeniami.")
