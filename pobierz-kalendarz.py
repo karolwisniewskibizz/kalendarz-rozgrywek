@@ -13,7 +13,7 @@ URL = "https://www.pomorskifutbol.pl/mecze.php?id=4623&id_klub=7470"
 HOME_TEAM = "Jaguar"
 HOME_KEY = "Jaguar Gdańsk"
 
-# wczytanie stadionów
+# wczytanie stadionów / miast
 with open("stadiums.json", encoding="utf-8") as f:
     stadiums = json.load(f)
 
@@ -103,7 +103,7 @@ for r in rows:
     uid_src = f"{year}-{month}-{day}-{home}-{away}".lower()
     uid = hashlib.md5(uid_src.encode()).hexdigest()
 
-    location = stadiums[home]["address"] if home in stadiums else ""
+    location = stadiums[home]["address"] if home in stadiums else home
 
     # wydarzenie meczu
     events.append({
@@ -121,8 +121,9 @@ for r in rows:
     is_away = HOME_TEAM.lower() in cols[3].lower()
 
     # WYJAZD i POWRÓT jeśli Jaguar jest gościem
-    if is_away and home in stadiums:
-        coord = (stadiums[home]["lat"], stadiums[home]["lon"])
+    if is_away:
+        # punkt docelowy
+        coord = (stadiums[home]["lat"], stadiums[home]["lon"]) if home in stadiums else HOME_COORD
         travel = travel_minutes(HOME_COORD, coord)
         depart = start - timedelta(minutes=(travel + 30))  # 30 min przed meczem
 
@@ -138,13 +139,12 @@ for r in rows:
         # Powrót po meczu
         return_start = end
         return_end = end + timedelta(minutes=travel)
-
         events.append({
             "uid": uid + "-return",
             "title": f"Powrót z meczu: {home}",
             "start": return_start,
             "end": return_end,
-            "location": stadiums[home]["address"]
+            "location": stadiums[home]["address"] if home in stadiums else home
         })
 
         print(f"Wyjazd na {home}: {travel} min, powrót po meczu")
