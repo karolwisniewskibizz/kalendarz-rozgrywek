@@ -5,6 +5,7 @@ import re
 import hashlib
 import json
 import math
+import pytz
 from geopy.distance import geodesic
 
 URL = "https://www.pomorskifutbol.pl/mecze.php?id=4623&id_klub=7470"
@@ -21,11 +22,13 @@ HOME_COORD = (
     stadiums[HOME_KEY]["lon"]
 )
 
+# strefa czasowa
+POLAND = pytz.timezone("Europe/Warsaw")
+
 html = requests.get(URL).content
 soup = BeautifulSoup(html, "html.parser")
 
 tables = soup.find_all("table")
-
 if not tables:
     print("Brak tabel na stronie")
     exit()
@@ -65,7 +68,7 @@ for r in rows:
     if not date_text:
         continue
 
-    # Nowy regex: obsługa "1. maja 2026" i "23/24. maja 2026"
+    # obsługa dat typu "1. maja 2026" i "23/24. maja 2026"
     m = re.search(r"(\d{1,2})(?:/\d{1,2})?\.?\s+(\w+)\s+(\d{4})", date_text)
     if not m:
         print(f"Nie znaleziono daty w: {date_text}")
@@ -89,10 +92,8 @@ for r in rows:
         time = "12:00"
 
     try:
-        start = datetime.strptime(
-            f"{year}-{month:02d}-{day:02d} {time}",
-            "%Y-%m-%d %H:%M"
-        )
+        naive_start = datetime.strptime(f"{year}-{month:02d}-{day:02d} {time}", "%Y-%m-%d %H:%M")
+        start = POLAND.localize(naive_start)
     except ValueError as e:
         print(f"Błąd parsowania daty: {date_text}, {e}")
         continue
@@ -102,9 +103,7 @@ for r in rows:
     uid_src = f"{year}-{month}-{day}-{home}-{away}".lower()
     uid = hashlib.md5(uid_src.encode()).hexdigest()
 
-    location = ""
-    if home in stadiums:
-        location = stadiums[home]["address"]
+    location = stadiums[home]["address"] if home in stadiums else ""
 
     # wydarzenie meczu
     events.append({
@@ -144,8 +143,8 @@ with open("calendar.ics","w",encoding="utf-8") as f:
         f.write("BEGIN:VEVENT\n")
         f.write(f"UID:{e['uid']}@jaguar\n")
         f.write(f"DTSTAMP:{datetime.utcnow().strftime('%Y%m%dT%H%M%SZ')}\n")
-        f.write(f"DTSTART:{e['start'].strftime('%Y%m%dT%H%M00')}\n")
-        f.write(f"DTEND:{e['end'].strftime('%Y%m%dT%H%M00')}\n")
+        f.write(f"DTSTART;TZID=Europe/Warsaw:{e['start'].strftime('%Y%m%dT%H%M%S')}\n")
+        f.write(f"DTEND;TZID=Europe/Warsaw:{e['end'].strftime('%Y%m%dT%H%M%S')}\n")
         f.write(f"SUMMARY:{e['title']}\n")
         if e["location"]:
             f.write(f"LOCATION:{e['location']}\n")
