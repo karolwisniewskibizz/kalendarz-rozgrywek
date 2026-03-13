@@ -54,7 +54,7 @@ def travel_minutes(coord1, coord2):
     dist_km = geodesic(coord1, coord2).km
     avg_speed = 70  # km/h
     minutes = dist_km / avg_speed * 60
-    return int(math.ceil(minutes / 15.0) * 15)  # <--- całkowite minuty
+    return int(math.ceil(minutes / 15.0) * 15)  # całkowite minuty, zaokrąglone do kwadransa
 
 for r in rows:
     cols = [c.get_text(strip=True) for c in r.find_all("td")]
@@ -122,9 +122,13 @@ for r in rows:
 
     # WYJAZD i POWRÓT jeśli Jaguar jest gościem
     if is_away:
-        # punkt docelowy
-        coord = (stadiums[home]["lat"], stadiums[home]["lon"]) if home in stadiums else HOME_COORD
-        travel = travel_minutes(HOME_COORD, coord)
+        if home in stadiums:
+            coord = (stadiums[home]["lat"], stadiums[home]["lon"])
+            travel = travel_minutes(HOME_COORD, coord)
+        else:
+            coord = HOME_COORD  # brak współrzędnych
+            travel = 60  # minimalny czas przejazdu w minutach
+
         depart = start - timedelta(minutes=(travel + 30))  # 30 min przed meczem
 
         # Wyjazd
