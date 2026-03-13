@@ -11,16 +11,14 @@ soup = BeautifulSoup(html, "html.parser")
 
 tables = soup.find_all("table")
 
-# Debug: Pokaż wszystkie znalezione tabele
-print(f"Znaleziono {len(tables)} tabel(i)")
-for i, t in enumerate(tables):
-    print(f"\nTabela {i}:")
-    print(t.get_text()[:200])
-
-# tabela z meczami to zwykle druga lub trzecia
+# Szukamy tabeli zawierającej miesiące
 match_table = None
+months_list = ["stycznia", "lutego", "marca", "kwietnia", "maja", "czerwca",
+               "lipca", "sierpnia", "września", "października", "listopada", "grudnia"]
+
 for t in tables:
-    if "kolejka" in t.get_text().lower():
+    table_text = t.get_text().lower()
+    if any(month in table_text for month in months_list):
         match_table = t
         break
 
