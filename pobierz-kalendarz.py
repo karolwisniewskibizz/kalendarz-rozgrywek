@@ -21,6 +21,7 @@ HOME_COORD = (
     stadiums[HOME_KEY]["lat"],
     stadiums[HOME_KEY]["lon"]
 )
+HOME_ADDRESS = stadiums[HOME_KEY]["address"]
 
 # strefa czasowa
 POLAND = pytz.timezone("Europe/Warsaw")
@@ -122,6 +123,11 @@ for r in rows:
 
     # WYJAZD i POWRÓT jeśli Jaguar jest gościem
     if is_away:
+        # Jeśli mecz jest na tym samym adresie co Jaguar (np. Gardeja), pomijamy dojazd i powrót.
+        if home in stadiums and stadiums[home]["address"] == HOME_ADDRESS:
+            print(f"Pomijam wyjazd/powrót dla {home}: ten sam adres stadionu co Jaguar")
+            continue
+
         if home in stadiums:
             coord = (stadiums[home]["lat"], stadiums[home]["lon"])
             travel = travel_minutes(HOME_COORD, coord)
