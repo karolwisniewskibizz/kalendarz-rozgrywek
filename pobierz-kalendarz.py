@@ -112,7 +112,7 @@ for r in rows:
         "title": f"{home} - {away}",
         "start": start,
         "end": end,
-        "location": location
+        "location": location,
         "url": URL
     })
 
