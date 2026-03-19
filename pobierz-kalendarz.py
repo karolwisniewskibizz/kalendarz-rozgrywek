@@ -114,7 +114,7 @@ for r in rows:
         "end": end,
         "location": location,
         "url": URL,
-        "description": f"Link:\\nLink: {URL}"
+        "description": f"Link: {URL}"
     })
 
     print(f"Dodano mecz: {home} - {away} ({start})")
