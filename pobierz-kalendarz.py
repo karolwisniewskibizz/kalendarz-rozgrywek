@@ -113,7 +113,8 @@ for r in rows:
         "start": start,
         "end": end,
         "location": location,
-        "url": URL
+        "url": URL,
+        "description": f"Link:\\nLink: {URL}"
     })
 
     print(f"Dodano mecz: {home} - {away} ({start})")
@@ -178,6 +179,9 @@ with open("calendar.ics","w",encoding="utf-8") as f:
             f.write(f"LOCATION:{e['location']}\n")
         if "url" in e:
             f.write(f"URL:{e['url']}\n")
+        if "description" in e:
+            desc = e["description"].replace("\n", "\\n")
+            f.write(f"DESCRIPTION:{desc}\n")
         f.write("END:VEVENT\n")
 
     f.write("END:VCALENDAR\n")
