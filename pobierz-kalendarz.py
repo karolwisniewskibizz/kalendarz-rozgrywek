@@ -96,6 +96,7 @@ for r in rows:
 
     # ✅ opis z godziną meczu
     desc = (
+        f"Rozgrzewka: {event_start.strftime('%H:%M')}\\n"
         f"Mecz: {home} - {away}\\n"
         f"Start: {match_start.strftime('%H:%M')}\\n"
         f"Koniec: {match_end.strftime('%H:%M')}\\n"
