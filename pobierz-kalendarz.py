@@ -146,7 +146,12 @@ for r in rows:
             "start": depart,
             "end": depart + timedelta(minutes=travel),
             "location": f"{HOME_TEAM} - {stadiums[home]['address'] if home in stadiums else home}",
-            "url": directions_url(HOME_ADDRESS, stadiums[home]["address"] if home in stadiums else home)
+            "url": directions_url(HOME_ADDRESS, stadiums[home]["address"] if home in stadiums else home),
+            "description": (
+                f"Trasa: {HOME_TEAM} -> {home}\\n"
+                f"Czas dojazdu: ok. {travel} min\\n"
+                f"Mapy Google: {directions_url(HOME_ADDRESS, stadiums[home]['address'] if home in stadiums else home)}"
+            )
         })
 
         events.append({
@@ -155,7 +160,12 @@ for r in rows:
             "start": match_end,
             "end": match_end + timedelta(minutes=travel),
             "location": f"{stadiums[home]['address'] if home in stadiums else home} - {HOME_TEAM}",
-            "url": directions_url(stadiums[home]["address"] if home in stadiums else home, HOME_ADDRESS)
+            "url": directions_url(stadiums[home]["address"] if home in stadiums else home, HOME_ADDRESS),
+            "description": (
+                f"Trasa: {home} -> {HOME_TEAM}\\n"
+                f"Czas powrotu: ok. {travel} min\\n"
+                f"Mapy Google: {directions_url(stadiums[home]['address'] if home in stadiums else home, HOME_ADDRESS)}"
+            )
         })
 
         print(f"Wyjazd: {travel} min")
