@@ -3,7 +3,7 @@ VERSION:2.0
 PRODID:-//Jaguar Calendar//PL
 BEGIN:VEVENT
 UID:39a7c73fe687ba7ac77ef54f3c9c500f@jaguar
-DTSTAMP:20260321T185406Z
+DTSTAMP:20260321T192313Z
 DTSTART;TZID=Europe/Warsaw:20260308T101500
 DTEND;TZID=Europe/Warsaw:20260308T130000
 SUMMARY:Pomezania II Malbork - Jaguar V Gdańsk AP
@@ -13,23 +13,25 @@ DESCRIPTION:Mecz: Pomezania II Malbork - Jaguar V Gdańsk AP\nRozgrzewka: 10:15\
 END:VEVENT
 BEGIN:VEVENT
 UID:39a7c73fe687ba7ac77ef54f3c9c500f-travel@jaguar
-DTSTAMP:20260321T185406Z
+DTSTAMP:20260321T192313Z
 DTSTART;TZID=Europe/Warsaw:20260308T091500
 DTEND;TZID=Europe/Warsaw:20260308T101500
 SUMMARY:Wyjazd na mecz: Pomezania II Malbork
-LOCATION:ul. Budowlanych 49, 80-298 Gdańsk
+LOCATION:Jaguar - Pomezania II Malbork
+URL:https://www.google.com/maps/dir/?api=1&origin=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&destination=Pomezania+II+Malbork&travelmode=driving
 END:VEVENT
 BEGIN:VEVENT
 UID:39a7c73fe687ba7ac77ef54f3c9c500f-return@jaguar
-DTSTAMP:20260321T185406Z
+DTSTAMP:20260321T192313Z
 DTSTART;TZID=Europe/Warsaw:20260308T130000
 DTEND;TZID=Europe/Warsaw:20260308T140000
 SUMMARY:Powrót z meczu: Pomezania II Malbork
-LOCATION:Pomezania II Malbork
+LOCATION:Pomezania II Malbork - Jaguar
+URL:https://www.google.com/maps/dir/?api=1&origin=Pomezania+II+Malbork&destination=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&travelmode=driving
 END:VEVENT
 BEGIN:VEVENT
 UID:209ff369bf4224557520e386a5fdc4fd@jaguar
-DTSTAMP:20260321T185406Z
+DTSTAMP:20260321T192313Z
 DTSTART;TZID=Europe/Warsaw:20260315T121500
 DTEND;TZID=Europe/Warsaw:20260315T150000
 SUMMARY:Jaguar V Gdańsk AP - GKS Gardeja
@@ -39,7 +41,7 @@ DESCRIPTION:Mecz: Jaguar V Gdańsk AP - GKS Gardeja\nRozgrzewka: 12:15\nStart: 1
 END:VEVENT
 BEGIN:VEVENT
 UID:055aa54363f6f7880b119a79d0524c82@jaguar
-DTSTAMP:20260321T185406Z
+DTSTAMP:20260321T192313Z
 DTSTART;TZID=Europe/Warsaw:20260321T141500
 DTEND;TZID=Europe/Warsaw:20260321T170000
 SUMMARY:Jaguar V Gdańsk AP - GKS Bobowo
@@ -49,7 +51,7 @@ DESCRIPTION:Mecz: Jaguar V Gdańsk AP - GKS Bobowo\nRozgrzewka: 14:15\nStart: 15
 END:VEVENT
 BEGIN:VEVENT
 UID:985af890527d278332307a7681e4c7b1@jaguar
-DTSTAMP:20260321T185406Z
+DTSTAMP:20260321T192313Z
 DTSTART;TZID=Europe/Warsaw:20260328T081500
 DTEND;TZID=Europe/Warsaw:20260328T110000
 SUMMARY:Sokół Zblewo - Jaguar V Gdańsk AP
@@ -59,23 +61,25 @@ DESCRIPTION:Mecz: Sokół Zblewo - Jaguar V Gdańsk AP\nRozgrzewka: 08:15\nStart
 END:VEVENT
 BEGIN:VEVENT
 UID:985af890527d278332307a7681e4c7b1-travel@jaguar
-DTSTAMP:20260321T185406Z
+DTSTAMP:20260321T192313Z
 DTSTART;TZID=Europe/Warsaw:20260328T071500
 DTEND;TZID=Europe/Warsaw:20260328T081500
 SUMMARY:Wyjazd na mecz: Sokół Zblewo
-LOCATION:ul. Budowlanych 49, 80-298 Gdańsk
+LOCATION:Jaguar - Sokół Zblewo
+URL:https://www.google.com/maps/dir/?api=1&origin=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&destination=Sok%C3%B3%C5%82+Zblewo&travelmode=driving
 END:VEVENT
 BEGIN:VEVENT
 UID:985af890527d278332307a7681e4c7b1-return@jaguar
-DTSTAMP:20260321T185406Z
+DTSTAMP:20260321T192313Z
 DTSTART;TZID=Europe/Warsaw:20260328T110000
 DTEND;TZID=Europe/Warsaw:20260328T120000
 SUMMARY:Powrót z meczu: Sokół Zblewo
-LOCATION:Sokół Zblewo
+LOCATION:Sokół Zblewo - Jaguar
+URL:https://www.google.com/maps/dir/?api=1&origin=Sok%C3%B3%C5%82+Zblewo&destination=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&travelmode=driving
 END:VEVENT
 BEGIN:VEVENT
 UID:aac2e150c8bac93499db00b235bc823d@jaguar
-DTSTAMP:20260321T185406Z
+DTSTAMP:20260321T192313Z
 DTSTART;TZID=Europe/Warsaw:20260402T141500
 DTEND;TZID=Europe/Warsaw:20260402T170000
 SUMMARY:Jaguar V Gdańsk AP - DSPN II Kwidzyn
@@ -85,7 +89,7 @@ DESCRIPTION:Mecz: Jaguar V Gdańsk AP - DSPN II Kwidzyn\nRozgrzewka: 14:15\nStar
 END:VEVENT
 BEGIN:VEVENT
 UID:331aede90f699b064c5716bedea60e20@jaguar
-DTSTAMP:20260321T185406Z
+DTSTAMP:20260321T192313Z
 DTSTART;TZID=Europe/Warsaw:20260404T131500
 DTEND;TZID=Europe/Warsaw:20260404T160000
 SUMMARY:KS Czernin - Jaguar V Gdańsk AP
@@ -95,23 +99,25 @@ DESCRIPTION:Mecz: KS Czernin - Jaguar V Gdańsk AP\nRozgrzewka: 13:15\nStart: 14
 END:VEVENT
 BEGIN:VEVENT
 UID:331aede90f699b064c5716bedea60e20-travel@jaguar
-DTSTAMP:20260321T185406Z
+DTSTAMP:20260321T192313Z
 DTSTART;TZID=Europe/Warsaw:20260404T121500
 DTEND;TZID=Europe/Warsaw:20260404T131500
 SUMMARY:Wyjazd na mecz: KS Czernin
-LOCATION:ul. Budowlanych 49, 80-298 Gdańsk
+LOCATION:Jaguar - KS Czernin
+URL:https://www.google.com/maps/dir/?api=1&origin=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&destination=KS+Czernin&travelmode=driving
 END:VEVENT
 BEGIN:VEVENT
 UID:331aede90f699b064c5716bedea60e20-return@jaguar
-DTSTAMP:20260321T185406Z
+DTSTAMP:20260321T192313Z
 DTSTART;TZID=Europe/Warsaw:20260404T160000
 DTEND;TZID=Europe/Warsaw:20260404T170000
 SUMMARY:Powrót z meczu: KS Czernin
-LOCATION:KS Czernin
+LOCATION:KS Czernin - Jaguar
+URL:https://www.google.com/maps/dir/?api=1&origin=KS+Czernin&destination=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&travelmode=driving
 END:VEVENT
 BEGIN:VEVENT
 UID:d6ddc37a88ffb9fbf9f0f251a1c93352@jaguar
-DTSTAMP:20260321T185406Z
+DTSTAMP:20260321T192313Z
 DTSTART;TZID=Europe/Warsaw:20260412T101500
 DTEND;TZID=Europe/Warsaw:20260412T130000
 SUMMARY:Jaguar V Gdańsk AP - Iskra Malbork
@@ -121,7 +127,7 @@ DESCRIPTION:Mecz: Jaguar V Gdańsk AP - Iskra Malbork\nRozgrzewka: 10:15\nStart:
 END:VEVENT
 BEGIN:VEVENT
 UID:8fed7e2c5c5ab976dbd405ba135238bc@jaguar
-DTSTAMP:20260321T185406Z
+DTSTAMP:20260321T192313Z
 DTSTART;TZID=Europe/Warsaw:20260418T111500
 DTEND;TZID=Europe/Warsaw:20260418T140000
 SUMMARY:Unia Tczew - Jaguar V Gdańsk AP
@@ -131,23 +137,25 @@ DESCRIPTION:Mecz: Unia Tczew - Jaguar V Gdańsk AP\nRozgrzewka: 11:15\nStart: 12
 END:VEVENT
 BEGIN:VEVENT
 UID:8fed7e2c5c5ab976dbd405ba135238bc-travel@jaguar
-DTSTAMP:20260321T185406Z
+DTSTAMP:20260321T192313Z
 DTSTART;TZID=Europe/Warsaw:20260418T101500
 DTEND;TZID=Europe/Warsaw:20260418T111500
 SUMMARY:Wyjazd na mecz: Unia Tczew
-LOCATION:ul. Budowlanych 49, 80-298 Gdańsk
+LOCATION:Jaguar - Unia Tczew
+URL:https://www.google.com/maps/dir/?api=1&origin=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&destination=Unia+Tczew&travelmode=driving
 END:VEVENT
 BEGIN:VEVENT
 UID:8fed7e2c5c5ab976dbd405ba135238bc-return@jaguar
-DTSTAMP:20260321T185406Z
+DTSTAMP:20260321T192313Z
 DTSTART;TZID=Europe/Warsaw:20260418T140000
 DTEND;TZID=Europe/Warsaw:20260418T150000
 SUMMARY:Powrót z meczu: Unia Tczew
-LOCATION:Unia Tczew
+LOCATION:Unia Tczew - Jaguar
+URL:https://www.google.com/maps/dir/?api=1&origin=Unia+Tczew&destination=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&travelmode=driving
 END:VEVENT
 BEGIN:VEVENT
 UID:e1a456e42364b8c1553672b3c8462dff@jaguar
-DTSTAMP:20260321T185406Z
+DTSTAMP:20260321T192313Z
 DTSTART;TZID=Europe/Warsaw:20260426T104500
 DTEND;TZID=Europe/Warsaw:20260426T133000
 SUMMARY:Jaguar V Gdańsk AP - Gryf Tczew MKS
@@ -157,7 +165,7 @@ DESCRIPTION:Mecz: Jaguar V Gdańsk AP - Gryf Tczew MKS\nRozgrzewka: 10:45\nStart
 END:VEVENT
 BEGIN:VEVENT
 UID:88d8c3a8355525ff49ca664a807b503c@jaguar
-DTSTAMP:20260321T185406Z
+DTSTAMP:20260321T192313Z
 DTSTART;TZID=Europe/Warsaw:20260501T111500
 DTEND;TZID=Europe/Warsaw:20260501T140000
 SUMMARY:Morze Stegna - Jaguar V Gdańsk AP
@@ -167,23 +175,25 @@ DESCRIPTION:Mecz: Morze Stegna - Jaguar V Gdańsk AP\nRozgrzewka: 11:15\nStart: 
 END:VEVENT
 BEGIN:VEVENT
 UID:88d8c3a8355525ff49ca664a807b503c-travel@jaguar
-DTSTAMP:20260321T185406Z
+DTSTAMP:20260321T192313Z
 DTSTART;TZID=Europe/Warsaw:20260501T101500
 DTEND;TZID=Europe/Warsaw:20260501T111500
 SUMMARY:Wyjazd na mecz: Morze Stegna
-LOCATION:ul. Budowlanych 49, 80-298 Gdańsk
+LOCATION:Jaguar - Morze Stegna
+URL:https://www.google.com/maps/dir/?api=1&origin=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&destination=Morze+Stegna&travelmode=driving
 END:VEVENT
 BEGIN:VEVENT
 UID:88d8c3a8355525ff49ca664a807b503c-return@jaguar
-DTSTAMP:20260321T185406Z
+DTSTAMP:20260321T192313Z
 DTSTART;TZID=Europe/Warsaw:20260501T140000
 DTEND;TZID=Europe/Warsaw:20260501T150000
 SUMMARY:Powrót z meczu: Morze Stegna
-LOCATION:Morze Stegna
+LOCATION:Morze Stegna - Jaguar
+URL:https://www.google.com/maps/dir/?api=1&origin=Morze+Stegna&destination=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&travelmode=driving
 END:VEVENT
 BEGIN:VEVENT
 UID:bc575a1eb55c52ec1fd4af1ab9139a73@jaguar
-DTSTAMP:20260321T185406Z
+DTSTAMP:20260321T192313Z
 DTSTART;TZID=Europe/Warsaw:20260509T111500
 DTEND;TZID=Europe/Warsaw:20260509T140000
 SUMMARY:Jaguar V Gdańsk AP - Błękitni Stare Pole
@@ -193,7 +203,7 @@ DESCRIPTION:Mecz: Jaguar V Gdańsk AP - Błękitni Stare Pole\nRozgrzewka: 11:15
 END:VEVENT
 BEGIN:VEVENT
 UID:6de1e659eb1ce8bcf4c30ca8632f4899@jaguar
-DTSTAMP:20260321T185406Z
+DTSTAMP:20260321T192313Z
 DTSTART;TZID=Europe/Warsaw:20260513T111500
 DTEND;TZID=Europe/Warsaw:20260513T140000
 SUMMARY:Beniaminek 03 IV Starogard Gdański - Jaguar V Gdańsk AP
@@ -203,23 +213,25 @@ DESCRIPTION:Mecz: Beniaminek 03 IV Starogard Gdański - Jaguar V Gdańsk AP\nRoz
 END:VEVENT
 BEGIN:VEVENT
 UID:6de1e659eb1ce8bcf4c30ca8632f4899-travel@jaguar
-DTSTAMP:20260321T185406Z
+DTSTAMP:20260321T192313Z
 DTSTART;TZID=Europe/Warsaw:20260513T101500
 DTEND;TZID=Europe/Warsaw:20260513T111500
 SUMMARY:Wyjazd na mecz: Beniaminek 03 IV Starogard Gdański
-LOCATION:ul. Budowlanych 49, 80-298 Gdańsk
+LOCATION:Jaguar - Beniaminek 03 IV Starogard Gdański
+URL:https://www.google.com/maps/dir/?api=1&origin=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&destination=Beniaminek+03+IV+Starogard+Gda%C5%84ski&travelmode=driving
 END:VEVENT
 BEGIN:VEVENT
 UID:6de1e659eb1ce8bcf4c30ca8632f4899-return@jaguar
-DTSTAMP:20260321T185406Z
+DTSTAMP:20260321T192313Z
 DTSTART;TZID=Europe/Warsaw:20260513T140000
 DTEND;TZID=Europe/Warsaw:20260513T150000
 SUMMARY:Powrót z meczu: Beniaminek 03 IV Starogard Gdański
-LOCATION:Beniaminek 03 IV Starogard Gdański
+LOCATION:Beniaminek 03 IV Starogard Gdański - Jaguar
+URL:https://www.google.com/maps/dir/?api=1&origin=Beniaminek+03+IV+Starogard+Gda%C5%84ski&destination=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&travelmode=driving
 END:VEVENT
 BEGIN:VEVENT
 UID:ba81658ce83fbee420c6b63e9c57b2ca@jaguar
-DTSTAMP:20260321T185406Z
+DTSTAMP:20260321T192313Z
 DTSTART;TZID=Europe/Warsaw:20260516T111500
 DTEND;TZID=Europe/Warsaw:20260516T140000
 SUMMARY:Jaguar V Gdańsk AP - Pogoń Prabuty
@@ -229,7 +241,7 @@ DESCRIPTION:Mecz: Jaguar V Gdańsk AP - Pogoń Prabuty\nRozgrzewka: 11:15\nStart
 END:VEVENT
 BEGIN:VEVENT
 UID:78a5ed12f001a1add51e22897d889618@jaguar
-DTSTAMP:20260321T185406Z
+DTSTAMP:20260321T192313Z
 DTSTART;TZID=Europe/Warsaw:20260523T101500
 DTEND;TZID=Europe/Warsaw:20260523T130000
 SUMMARY:MKP Szlachta - Jaguar V Gdańsk AP
@@ -239,23 +251,25 @@ DESCRIPTION:Mecz: MKP Szlachta - Jaguar V Gdańsk AP\nRozgrzewka: 10:15\nStart: 
 END:VEVENT
 BEGIN:VEVENT
 UID:78a5ed12f001a1add51e22897d889618-travel@jaguar
-DTSTAMP:20260321T185406Z
+DTSTAMP:20260321T192313Z
 DTSTART;TZID=Europe/Warsaw:20260523T091500
 DTEND;TZID=Europe/Warsaw:20260523T101500
 SUMMARY:Wyjazd na mecz: MKP Szlachta
-LOCATION:ul. Budowlanych 49, 80-298 Gdańsk
+LOCATION:Jaguar - MKP Szlachta
+URL:https://www.google.com/maps/dir/?api=1&origin=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&destination=MKP+Szlachta&travelmode=driving
 END:VEVENT
 BEGIN:VEVENT
 UID:78a5ed12f001a1add51e22897d889618-return@jaguar
-DTSTAMP:20260321T185406Z
+DTSTAMP:20260321T192313Z
 DTSTART;TZID=Europe/Warsaw:20260523T130000
 DTEND;TZID=Europe/Warsaw:20260523T140000
 SUMMARY:Powrót z meczu: MKP Szlachta
-LOCATION:MKP Szlachta
+LOCATION:MKP Szlachta - Jaguar
+URL:https://www.google.com/maps/dir/?api=1&origin=MKP+Szlachta&destination=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&travelmode=driving
 END:VEVENT
 BEGIN:VEVENT
 UID:2e54e191af39ae95c3e959b1eccb2a75@jaguar
-DTSTAMP:20260321T185406Z
+DTSTAMP:20260321T192313Z
 DTSTART;TZID=Europe/Warsaw:20260530T111500
 DTEND;TZID=Europe/Warsaw:20260530T140000
 SUMMARY:Jaguar V Gdańsk AP - AP Deyna Starogard Gdański
