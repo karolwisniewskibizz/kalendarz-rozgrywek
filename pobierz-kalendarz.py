@@ -6,6 +6,7 @@ import hashlib
 import json
 import math
 import pytz
+from urllib.parse import urlencode
 from geopy.distance import geodesic
 
 URL = "https://www.pomorskifutbol.pl/mecze.php?id=4623&id_klub=7470"
@@ -50,6 +51,15 @@ def travel_minutes(coord1, coord2):
     avg_speed = 70
     minutes = dist_km / avg_speed * 60
     return int(math.ceil(minutes / 15.0) * 15)
+
+def directions_url(origin, destination):
+    params = urlencode({
+        "api": 1,
+        "origin": origin,
+        "destination": destination,
+        "travelmode": "driving"
+    })
+    return f"https://www.google.com/maps/dir/?{params}"
 
 for r in rows:
     cols = [c.get_text(strip=True) for c in r.find_all("td")]
@@ -135,7 +145,8 @@ for r in rows:
             "title": f"Wyjazd na mecz: {home}",
             "start": depart,
             "end": depart + timedelta(minutes=travel),
-            "location": HOME_ADDRESS
+            "location": f"{HOME_TEAM} - {stadiums[home]['address'] if home in stadiums else home}",
+            "url": directions_url(HOME_ADDRESS, stadiums[home]["address"] if home in stadiums else home)
         })
 
         events.append({
@@ -143,7 +154,8 @@ for r in rows:
             "title": f"Powrót z meczu: {home}",
             "start": match_end,
             "end": match_end + timedelta(minutes=travel),
-            "location": stadiums[home]["address"] if home in stadiums else home
+            "location": f"{stadiums[home]['address'] if home in stadiums else home} - {HOME_TEAM}",
+            "url": directions_url(stadiums[home]["address"] if home in stadiums else home, HOME_ADDRESS)
         })
 
         print(f"Wyjazd: {travel} min")
