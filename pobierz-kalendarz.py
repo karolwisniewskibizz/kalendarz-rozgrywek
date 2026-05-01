@@ -176,6 +176,9 @@ with open("calendar.ics","w",encoding="utf-8") as f:
     f.write("BEGIN:VCALENDAR\n")
     f.write("VERSION:2.0\n")
     f.write("PRODID:-//Jaguar Calendar//PL\n")
+    f.write(f"X-WR-CALNAME:Jaguar Gdańsk - Terminarz\n")
+    f.write(f"X-WR-TIMEZONE:Europe/Warsaw\n")
+    f.write(f"X-WR-CALDESC:Wygenerowano {datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S UTC')}\n")
 
     for e in events:
         f.write("BEGIN:VEVENT\n")
