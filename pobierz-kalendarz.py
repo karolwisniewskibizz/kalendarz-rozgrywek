@@ -11,7 +11,7 @@ import requests
 from bs4 import BeautifulSoup
 from geopy.distance import geodesic
 
-DEFAULT_URL = "https://www.pomorskifutbol.pl/mecze.php?id=4623&id_klub=7470"
+DEFAULT_URL = "https://www.laczynaspilka.pl/rozgrywki?season=e9d66181-d03e-4bb3-b889-4da848f4831d&leagueGroup=8dc010c0-405f-4cbc-97f7-f2ee0f2ec575&leagueId=337bb869-0b42-484f-8eca-0c8842a13ec9&subLeague=9d41a9e1-aa66-4e2c-9f33-6f4b01139837&enumType=ZpnAndLeagueAndPlay&group=23b861c3-c919-4fcd-afc2-49da6c228344&voivodeship=fdc878a1-239c-4978-bcf3-0046cea3efe2&isAdvanceMode=false&genderType=Male"
 
 HOME_TEAM = "Jaguar"
 HOME_KEY = "Jaguar Gdańsk"
@@ -41,7 +41,7 @@ months = {
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Generuje kalendarz meczów do pliku ICS")
-    parser.add_argument("--url", default=DEFAULT_URL, help="URL terminarza")
+    parser.add_argument("--url", default=DEFAULT_URL, help="URL terminarza (domyślnie laczynaspilka.pl)")
     return parser.parse_args()
 
 
@@ -146,9 +146,15 @@ def parse_matches(url, html):
     soup = BeautifulSoup(html, "html.parser")
     host = urlparse(url).netloc
 
+    if "laczynaspilka.pl" in host:
+        json_ld_matches = parse_matches_from_json_ld(soup)
+        if json_ld_matches:
+            print(f"Źródło: laczynaspilka JSON-LD ({len(json_ld_matches)} meczów)")
+            return json_ld_matches
+
     if "pomorskifutbol.pl" in host:
         matches = parse_matches_from_table(soup)
-        print(f"Źródło: tabela HTML ({len(matches)} meczów)")
+        print(f"Źródło: pomorskifutbol tabela HTML ({len(matches)} meczów)")
         return matches
 
     json_ld_matches = parse_matches_from_json_ld(soup)
