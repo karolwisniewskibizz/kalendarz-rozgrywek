@@ -9,7 +9,7 @@ import pytz
 from urllib.parse import urlencode
 from geopy.distance import geodesic
 
-URL = "https://www.pomorskifutbol.pl/mecze.php?id=4623&id_klub=7470"
+URL = "https://www.pomorskifutbol.pl/mecze.php?id=4805&id_klub=7085"
 
 HOME_TEAM = "Jaguar"
 HOME_KEY = "Jaguar Gdańsk"
