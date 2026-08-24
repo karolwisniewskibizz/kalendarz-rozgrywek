@@ -3,295 +3,255 @@ VERSION:2.0
 PRODID:-//Jaguar Calendar//PL
 X-WR-CALNAME:Jaguar Gdańsk - Terminarz
 X-WR-TIMEZONE:Europe/Warsaw
-X-WR-CALDESC:Wygenerowano 2026-06-20 03:31:15 UTC
+X-WR-CALDESC:Wygenerowano 2026-08-24 18:20:07 UTC
 BEGIN:VEVENT
-UID:39a7c73fe687ba7ac77ef54f3c9c500f@jaguar
-DTSTAMP:20260620T033115Z
-DTSTART;TZID=Europe/Warsaw:20260308T101500
-DTEND;TZID=Europe/Warsaw:20260308T130000
-SUMMARY:Pomezania II Malbork - Jaguar V Gdańsk AP
-LOCATION:Pomezania II Malbork
-URL:https://www.pomorskifutbol.pl/mecze.php?id=4623&id_klub=7470
-DESCRIPTION:Mecz: Pomezania II Malbork - Jaguar V Gdańsk AP\nRozgrzewka: 10:15\nStart: 11:00\nKoniec: 13:00\nLink: https://www.pomorskifutbol.pl/mecze.php?id=4623&id_klub=7470
+UID:6c4bf3c965778f577b9b043da41a759d@jaguar
+DTSTAMP:20260824T182007Z
+DTSTART;TZID=Europe/Warsaw:20260822T121500
+DTEND;TZID=Europe/Warsaw:20260822T150000
+SUMMARY:Jaguar IV Gdańsk AP - EX Siedlce Gdańsk
+LOCATION:Jaguar IV Gdańsk AP
+URL:https://www.pomorskifutbol.pl/mecze.php?id=4805&id_klub=7085
+DESCRIPTION:Mecz: Jaguar IV Gdańsk AP - EX Siedlce Gdańsk\nRozgrzewka: 12:15\nStart: 13:00\nKoniec: 15:00\nLink: https://www.pomorskifutbol.pl/mecze.php?id=4805&id_klub=7085
 END:VEVENT
 BEGIN:VEVENT
-UID:39a7c73fe687ba7ac77ef54f3c9c500f-travel@jaguar
-DTSTAMP:20260620T033115Z
-DTSTART;TZID=Europe/Warsaw:20260308T091500
-DTEND;TZID=Europe/Warsaw:20260308T101500
-SUMMARY:Wyjazd na mecz: Pomezania II Malbork
-LOCATION:Jaguar - Pomezania II Malbork
-URL:https://www.google.com/maps/dir/?api=1&origin=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&destination=Pomezania+II+Malbork&travelmode=driving
-DESCRIPTION:Trasa: Jaguar -> Pomezania II Malbork\nCzas dojazdu: ok. 60 min\nMapy Google: https://www.google.com/maps/dir/?api=1&origin=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&destination=Pomezania+II+Malbork&travelmode=driving
+UID:64d2c58586584c9f1b43b488cab9e65d@jaguar
+DTSTAMP:20260824T182007Z
+DTSTART;TZID=Europe/Warsaw:20260826T184500
+DTEND;TZID=Europe/Warsaw:20260826T213000
+SUMMARY:Jaguar IV Gdańsk AP - Gryf Tczew MKS
+LOCATION:Jaguar IV Gdańsk AP
+URL:https://www.pomorskifutbol.pl/mecze.php?id=4805&id_klub=7085
+DESCRIPTION:Mecz: Jaguar IV Gdańsk AP - Gryf Tczew MKS\nRozgrzewka: 18:45\nStart: 19:30\nKoniec: 21:30\nLink: https://www.pomorskifutbol.pl/mecze.php?id=4805&id_klub=7085
 END:VEVENT
 BEGIN:VEVENT
-UID:39a7c73fe687ba7ac77ef54f3c9c500f-return@jaguar
-DTSTAMP:20260620T033115Z
-DTSTART;TZID=Europe/Warsaw:20260308T130000
-DTEND;TZID=Europe/Warsaw:20260308T140000
-SUMMARY:Powrót z meczu: Pomezania II Malbork
-LOCATION:Pomezania II Malbork - Jaguar
-URL:https://www.google.com/maps/dir/?api=1&origin=Pomezania+II+Malbork&destination=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&travelmode=driving
-DESCRIPTION:Trasa: Pomezania II Malbork -> Jaguar\nCzas powrotu: ok. 60 min\nMapy Google: https://www.google.com/maps/dir/?api=1&origin=Pomezania+II+Malbork&destination=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&travelmode=driving
+UID:cf1248eda340c9b05003853b33a8ac20@jaguar
+DTSTAMP:20260824T182007Z
+DTSTART;TZID=Europe/Warsaw:20260830T121500
+DTEND;TZID=Europe/Warsaw:20260830T150000
+SUMMARY:Beniaminek 03 Starogard Gdański - Jaguar IV Gdańsk AP
+LOCATION:Beniaminek 03 Starogard Gdański
+URL:https://www.pomorskifutbol.pl/mecze.php?id=4805&id_klub=7085
+DESCRIPTION:Mecz: Beniaminek 03 Starogard Gdański - Jaguar IV Gdańsk AP\nRozgrzewka: 12:15\nStart: 13:00\nKoniec: 15:00\nLink: https://www.pomorskifutbol.pl/mecze.php?id=4805&id_klub=7085
 END:VEVENT
 BEGIN:VEVENT
-UID:209ff369bf4224557520e386a5fdc4fd@jaguar
-DTSTAMP:20260620T033115Z
-DTSTART;TZID=Europe/Warsaw:20260315T121500
-DTEND;TZID=Europe/Warsaw:20260315T150000
-SUMMARY:Jaguar V Gdańsk AP - GKS Gardeja
-LOCATION:Jaguar V Gdańsk AP
-URL:https://www.pomorskifutbol.pl/mecze.php?id=4623&id_klub=7470
-DESCRIPTION:Mecz: Jaguar V Gdańsk AP - GKS Gardeja\nRozgrzewka: 12:15\nStart: 13:00\nKoniec: 15:00\nLink: https://www.pomorskifutbol.pl/mecze.php?id=4623&id_klub=7470
+UID:cf1248eda340c9b05003853b33a8ac20-travel@jaguar
+DTSTAMP:20260824T182007Z
+DTSTART;TZID=Europe/Warsaw:20260830T111500
+DTEND;TZID=Europe/Warsaw:20260830T121500
+SUMMARY:Wyjazd na mecz: Beniaminek 03 Starogard Gdański
+LOCATION:Jaguar - Beniaminek 03 Starogard Gdański
+URL:https://www.google.com/maps/dir/?api=1&origin=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&destination=Beniaminek+03+Starogard+Gda%C5%84ski&travelmode=driving
+DESCRIPTION:Trasa: Jaguar -> Beniaminek 03 Starogard Gdański\nCzas dojazdu: ok. 60 min\nMapy Google: https://www.google.com/maps/dir/?api=1&origin=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&destination=Beniaminek+03+Starogard+Gda%C5%84ski&travelmode=driving
 END:VEVENT
 BEGIN:VEVENT
-UID:055aa54363f6f7880b119a79d0524c82@jaguar
-DTSTAMP:20260620T033115Z
-DTSTART;TZID=Europe/Warsaw:20260321T141500
-DTEND;TZID=Europe/Warsaw:20260321T170000
-SUMMARY:Jaguar V Gdańsk AP - GKS Bobowo
-LOCATION:Jaguar V Gdańsk AP
-URL:https://www.pomorskifutbol.pl/mecze.php?id=4623&id_klub=7470
-DESCRIPTION:Mecz: Jaguar V Gdańsk AP - GKS Bobowo\nRozgrzewka: 14:15\nStart: 15:00\nKoniec: 17:00\nLink: https://www.pomorskifutbol.pl/mecze.php?id=4623&id_klub=7470
+UID:cf1248eda340c9b05003853b33a8ac20-return@jaguar
+DTSTAMP:20260824T182007Z
+DTSTART;TZID=Europe/Warsaw:20260830T150000
+DTEND;TZID=Europe/Warsaw:20260830T160000
+SUMMARY:Powrót z meczu: Beniaminek 03 Starogard Gdański
+LOCATION:Beniaminek 03 Starogard Gdański - Jaguar
+URL:https://www.google.com/maps/dir/?api=1&origin=Beniaminek+03+Starogard+Gda%C5%84ski&destination=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&travelmode=driving
+DESCRIPTION:Trasa: Beniaminek 03 Starogard Gdański -> Jaguar\nCzas powrotu: ok. 60 min\nMapy Google: https://www.google.com/maps/dir/?api=1&origin=Beniaminek+03+Starogard+Gda%C5%84ski&destination=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&travelmode=driving
 END:VEVENT
 BEGIN:VEVENT
-UID:985af890527d278332307a7681e4c7b1@jaguar
-DTSTAMP:20260620T033115Z
-DTSTART;TZID=Europe/Warsaw:20260328T081500
-DTEND;TZID=Europe/Warsaw:20260328T110000
-SUMMARY:Sokół Zblewo - Jaguar V Gdańsk AP
-LOCATION:Sokół Zblewo
-URL:https://www.pomorskifutbol.pl/mecze.php?id=4623&id_klub=7470
-DESCRIPTION:Mecz: Sokół Zblewo - Jaguar V Gdańsk AP\nRozgrzewka: 08:15\nStart: 09:00\nKoniec: 11:00\nLink: https://www.pomorskifutbol.pl/mecze.php?id=4623&id_klub=7470
+UID:6c48a5e459f046ed70872e8380698128@jaguar
+DTSTAMP:20260824T182007Z
+DTSTART;TZID=Europe/Warsaw:20260902T141500
+DTEND;TZID=Europe/Warsaw:20260902T170000
+SUMMARY:Jaguar IV Gdańsk AP - Escola Futbolu Pruszcz Gdański
+LOCATION:Jaguar IV Gdańsk AP
+URL:https://www.pomorskifutbol.pl/mecze.php?id=4805&id_klub=7085
+DESCRIPTION:Mecz: Jaguar IV Gdańsk AP - Escola Futbolu Pruszcz Gdański\nRozgrzewka: 14:15\nStart: 15:00\nKoniec: 17:00\nLink: https://www.pomorskifutbol.pl/mecze.php?id=4805&id_klub=7085
 END:VEVENT
 BEGIN:VEVENT
-UID:985af890527d278332307a7681e4c7b1-travel@jaguar
-DTSTAMP:20260620T033115Z
-DTSTART;TZID=Europe/Warsaw:20260328T071500
-DTEND;TZID=Europe/Warsaw:20260328T081500
-SUMMARY:Wyjazd na mecz: Sokół Zblewo
-LOCATION:Jaguar - Sokół Zblewo
-URL:https://www.google.com/maps/dir/?api=1&origin=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&destination=Sok%C3%B3%C5%82+Zblewo&travelmode=driving
-DESCRIPTION:Trasa: Jaguar -> Sokół Zblewo\nCzas dojazdu: ok. 60 min\nMapy Google: https://www.google.com/maps/dir/?api=1&origin=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&destination=Sok%C3%B3%C5%82+Zblewo&travelmode=driving
+UID:e9a6d37557e3aa04f31b779ee8234c44@jaguar
+DTSTAMP:20260824T182007Z
+DTSTART;TZID=Europe/Warsaw:20260905T111500
+DTEND;TZID=Europe/Warsaw:20260905T140000
+SUMMARY:Lupi Skowarcz - Jaguar IV Gdańsk AP
+LOCATION:Lupi Skowarcz
+URL:https://www.pomorskifutbol.pl/mecze.php?id=4805&id_klub=7085
+DESCRIPTION:Mecz: Lupi Skowarcz - Jaguar IV Gdańsk AP\nRozgrzewka: 11:15\nStart: 12:00\nKoniec: 14:00\nLink: https://www.pomorskifutbol.pl/mecze.php?id=4805&id_klub=7085
 END:VEVENT
 BEGIN:VEVENT
-UID:985af890527d278332307a7681e4c7b1-return@jaguar
-DTSTAMP:20260620T033115Z
-DTSTART;TZID=Europe/Warsaw:20260328T110000
-DTEND;TZID=Europe/Warsaw:20260328T120000
-SUMMARY:Powrót z meczu: Sokół Zblewo
-LOCATION:Sokół Zblewo - Jaguar
-URL:https://www.google.com/maps/dir/?api=1&origin=Sok%C3%B3%C5%82+Zblewo&destination=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&travelmode=driving
-DESCRIPTION:Trasa: Sokół Zblewo -> Jaguar\nCzas powrotu: ok. 60 min\nMapy Google: https://www.google.com/maps/dir/?api=1&origin=Sok%C3%B3%C5%82+Zblewo&destination=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&travelmode=driving
+UID:e9a6d37557e3aa04f31b779ee8234c44-travel@jaguar
+DTSTAMP:20260824T182007Z
+DTSTART;TZID=Europe/Warsaw:20260905T101500
+DTEND;TZID=Europe/Warsaw:20260905T111500
+SUMMARY:Wyjazd na mecz: Lupi Skowarcz
+LOCATION:Jaguar - Lupi Skowarcz
+URL:https://www.google.com/maps/dir/?api=1&origin=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&destination=Lupi+Skowarcz&travelmode=driving
+DESCRIPTION:Trasa: Jaguar -> Lupi Skowarcz\nCzas dojazdu: ok. 60 min\nMapy Google: https://www.google.com/maps/dir/?api=1&origin=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&destination=Lupi+Skowarcz&travelmode=driving
 END:VEVENT
 BEGIN:VEVENT
-UID:aac2e150c8bac93499db00b235bc823d@jaguar
-DTSTAMP:20260620T033115Z
-DTSTART;TZID=Europe/Warsaw:20260402T141500
-DTEND;TZID=Europe/Warsaw:20260402T170000
-SUMMARY:Jaguar V Gdańsk AP - DSPN II Kwidzyn
-LOCATION:Jaguar V Gdańsk AP
-URL:https://www.pomorskifutbol.pl/mecze.php?id=4623&id_klub=7470
-DESCRIPTION:Mecz: Jaguar V Gdańsk AP - DSPN II Kwidzyn\nRozgrzewka: 14:15\nStart: 15:00\nKoniec: 17:00\nLink: https://www.pomorskifutbol.pl/mecze.php?id=4623&id_klub=7470
+UID:e9a6d37557e3aa04f31b779ee8234c44-return@jaguar
+DTSTAMP:20260824T182007Z
+DTSTART;TZID=Europe/Warsaw:20260905T140000
+DTEND;TZID=Europe/Warsaw:20260905T150000
+SUMMARY:Powrót z meczu: Lupi Skowarcz
+LOCATION:Lupi Skowarcz - Jaguar
+URL:https://www.google.com/maps/dir/?api=1&origin=Lupi+Skowarcz&destination=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&travelmode=driving
+DESCRIPTION:Trasa: Lupi Skowarcz -> Jaguar\nCzas powrotu: ok. 60 min\nMapy Google: https://www.google.com/maps/dir/?api=1&origin=Lupi+Skowarcz&destination=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&travelmode=driving
 END:VEVENT
 BEGIN:VEVENT
-UID:331aede90f699b064c5716bedea60e20@jaguar
-DTSTAMP:20260620T033115Z
-DTSTART;TZID=Europe/Warsaw:20260404T143000
-DTEND;TZID=Europe/Warsaw:20260404T171500
-SUMMARY:KS Czernin - Jaguar V Gdańsk AP
-LOCATION:KS Czernin
-URL:https://www.pomorskifutbol.pl/mecze.php?id=4623&id_klub=7470
-DESCRIPTION:Mecz: KS Czernin - Jaguar V Gdańsk AP\nRozgrzewka: 14:30\nStart: 15:15\nKoniec: 17:15\nLink: https://www.pomorskifutbol.pl/mecze.php?id=4623&id_klub=7470
+UID:f5a8b78484479dce2c512ebce7d09e7d@jaguar
+DTSTAMP:20260824T182007Z
+DTSTART;TZID=Europe/Warsaw:20260912T141500
+DTEND;TZID=Europe/Warsaw:20260912T170000
+SUMMARY:Jaguar IV Gdańsk AP - Styna Godziszewo
+LOCATION:Jaguar IV Gdańsk AP
+URL:https://www.pomorskifutbol.pl/mecze.php?id=4805&id_klub=7085
+DESCRIPTION:Mecz: Jaguar IV Gdańsk AP - Styna Godziszewo\nRozgrzewka: 14:15\nStart: 15:00\nKoniec: 17:00\nLink: https://www.pomorskifutbol.pl/mecze.php?id=4805&id_klub=7085
 END:VEVENT
 BEGIN:VEVENT
-UID:331aede90f699b064c5716bedea60e20-travel@jaguar
-DTSTAMP:20260620T033115Z
-DTSTART;TZID=Europe/Warsaw:20260404T133000
-DTEND;TZID=Europe/Warsaw:20260404T143000
-SUMMARY:Wyjazd na mecz: KS Czernin
-LOCATION:Jaguar - KS Czernin
-URL:https://www.google.com/maps/dir/?api=1&origin=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&destination=KS+Czernin&travelmode=driving
-DESCRIPTION:Trasa: Jaguar -> KS Czernin\nCzas dojazdu: ok. 60 min\nMapy Google: https://www.google.com/maps/dir/?api=1&origin=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&destination=KS+Czernin&travelmode=driving
+UID:b2e06f4bff5f6090798a4aa917655848@jaguar
+DTSTAMP:20260824T182007Z
+DTSTART;TZID=Europe/Warsaw:20260919T111500
+DTEND;TZID=Europe/Warsaw:20260919T140000
+SUMMARY:Potok Pszczółki - Jaguar IV Gdańsk AP
+LOCATION:Potok Pszczółki
+URL:https://www.pomorskifutbol.pl/mecze.php?id=4805&id_klub=7085
+DESCRIPTION:Mecz: Potok Pszczółki - Jaguar IV Gdańsk AP\nRozgrzewka: 11:15\nStart: 12:00\nKoniec: 14:00\nLink: https://www.pomorskifutbol.pl/mecze.php?id=4805&id_klub=7085
 END:VEVENT
 BEGIN:VEVENT
-UID:331aede90f699b064c5716bedea60e20-return@jaguar
-DTSTAMP:20260620T033115Z
-DTSTART;TZID=Europe/Warsaw:20260404T171500
-DTEND;TZID=Europe/Warsaw:20260404T181500
-SUMMARY:Powrót z meczu: KS Czernin
-LOCATION:KS Czernin - Jaguar
-URL:https://www.google.com/maps/dir/?api=1&origin=KS+Czernin&destination=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&travelmode=driving
-DESCRIPTION:Trasa: KS Czernin -> Jaguar\nCzas powrotu: ok. 60 min\nMapy Google: https://www.google.com/maps/dir/?api=1&origin=KS+Czernin&destination=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&travelmode=driving
+UID:b2e06f4bff5f6090798a4aa917655848-travel@jaguar
+DTSTAMP:20260824T182007Z
+DTSTART;TZID=Europe/Warsaw:20260919T101500
+DTEND;TZID=Europe/Warsaw:20260919T111500
+SUMMARY:Wyjazd na mecz: Potok Pszczółki
+LOCATION:Jaguar - Potok Pszczółki
+URL:https://www.google.com/maps/dir/?api=1&origin=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&destination=Potok+Pszcz%C3%B3%C5%82ki&travelmode=driving
+DESCRIPTION:Trasa: Jaguar -> Potok Pszczółki\nCzas dojazdu: ok. 60 min\nMapy Google: https://www.google.com/maps/dir/?api=1&origin=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&destination=Potok+Pszcz%C3%B3%C5%82ki&travelmode=driving
 END:VEVENT
 BEGIN:VEVENT
-UID:d6ddc37a88ffb9fbf9f0f251a1c93352@jaguar
-DTSTAMP:20260620T033115Z
-DTSTART;TZID=Europe/Warsaw:20260412T101500
-DTEND;TZID=Europe/Warsaw:20260412T130000
-SUMMARY:Jaguar V Gdańsk AP - Iskra Malbork
-LOCATION:Jaguar V Gdańsk AP
-URL:https://www.pomorskifutbol.pl/mecze.php?id=4623&id_klub=7470
-DESCRIPTION:Mecz: Jaguar V Gdańsk AP - Iskra Malbork\nRozgrzewka: 10:15\nStart: 11:00\nKoniec: 13:00\nLink: https://www.pomorskifutbol.pl/mecze.php?id=4623&id_klub=7470
+UID:b2e06f4bff5f6090798a4aa917655848-return@jaguar
+DTSTAMP:20260824T182007Z
+DTSTART;TZID=Europe/Warsaw:20260919T140000
+DTEND;TZID=Europe/Warsaw:20260919T150000
+SUMMARY:Powrót z meczu: Potok Pszczółki
+LOCATION:Potok Pszczółki - Jaguar
+URL:https://www.google.com/maps/dir/?api=1&origin=Potok+Pszcz%C3%B3%C5%82ki&destination=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&travelmode=driving
+DESCRIPTION:Trasa: Potok Pszczółki -> Jaguar\nCzas powrotu: ok. 60 min\nMapy Google: https://www.google.com/maps/dir/?api=1&origin=Potok+Pszcz%C3%B3%C5%82ki&destination=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&travelmode=driving
 END:VEVENT
 BEGIN:VEVENT
-UID:8fed7e2c5c5ab976dbd405ba135238bc@jaguar
-DTSTAMP:20260620T033115Z
-DTSTART;TZID=Europe/Warsaw:20260418T101500
-DTEND;TZID=Europe/Warsaw:20260418T130000
-SUMMARY:Unia Tczew - Jaguar V Gdańsk AP
-LOCATION:Unia Tczew
-URL:https://www.pomorskifutbol.pl/mecze.php?id=4623&id_klub=7470
-DESCRIPTION:Mecz: Unia Tczew - Jaguar V Gdańsk AP\nRozgrzewka: 10:15\nStart: 11:00\nKoniec: 13:00\nLink: https://www.pomorskifutbol.pl/mecze.php?id=4623&id_klub=7470
+UID:52816dd38d50db0685e5ed70103d88b7@jaguar
+DTSTAMP:20260824T182007Z
+DTSTART;TZID=Europe/Warsaw:20260926T111500
+DTEND;TZID=Europe/Warsaw:20260926T140000
+SUMMARY:Jaguar IV Gdańsk AP - GTS Pruszcz Gdański
+LOCATION:Jaguar IV Gdańsk AP
+URL:https://www.pomorskifutbol.pl/mecze.php?id=4805&id_klub=7085
+DESCRIPTION:Mecz: Jaguar IV Gdańsk AP - GTS Pruszcz Gdański\nRozgrzewka: 11:15\nStart: 12:00\nKoniec: 14:00\nLink: https://www.pomorskifutbol.pl/mecze.php?id=4805&id_klub=7085
 END:VEVENT
 BEGIN:VEVENT
-UID:8fed7e2c5c5ab976dbd405ba135238bc-travel@jaguar
-DTSTAMP:20260620T033115Z
-DTSTART;TZID=Europe/Warsaw:20260418T091500
-DTEND;TZID=Europe/Warsaw:20260418T101500
-SUMMARY:Wyjazd na mecz: Unia Tczew
-LOCATION:Jaguar - Unia Tczew
-URL:https://www.google.com/maps/dir/?api=1&origin=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&destination=Unia+Tczew&travelmode=driving
-DESCRIPTION:Trasa: Jaguar -> Unia Tczew\nCzas dojazdu: ok. 60 min\nMapy Google: https://www.google.com/maps/dir/?api=1&origin=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&destination=Unia+Tczew&travelmode=driving
+UID:9861460053edaa088bb00c469435c392@jaguar
+DTSTAMP:20260824T182007Z
+DTSTART;TZID=Europe/Warsaw:20261003T141500
+DTEND;TZID=Europe/Warsaw:20261003T170000
+SUMMARY:AP Merchel II Kolbudy - Jaguar IV Gdańsk AP
+LOCATION:AP Merchel II Kolbudy
+URL:https://www.pomorskifutbol.pl/mecze.php?id=4805&id_klub=7085
+DESCRIPTION:Mecz: AP Merchel II Kolbudy - Jaguar IV Gdańsk AP\nRozgrzewka: 14:15\nStart: 15:00\nKoniec: 17:00\nLink: https://www.pomorskifutbol.pl/mecze.php?id=4805&id_klub=7085
 END:VEVENT
 BEGIN:VEVENT
-UID:8fed7e2c5c5ab976dbd405ba135238bc-return@jaguar
-DTSTAMP:20260620T033115Z
-DTSTART;TZID=Europe/Warsaw:20260418T130000
-DTEND;TZID=Europe/Warsaw:20260418T140000
-SUMMARY:Powrót z meczu: Unia Tczew
-LOCATION:Unia Tczew - Jaguar
-URL:https://www.google.com/maps/dir/?api=1&origin=Unia+Tczew&destination=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&travelmode=driving
-DESCRIPTION:Trasa: Unia Tczew -> Jaguar\nCzas powrotu: ok. 60 min\nMapy Google: https://www.google.com/maps/dir/?api=1&origin=Unia+Tczew&destination=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&travelmode=driving
+UID:9861460053edaa088bb00c469435c392-travel@jaguar
+DTSTAMP:20260824T182007Z
+DTSTART;TZID=Europe/Warsaw:20261003T131500
+DTEND;TZID=Europe/Warsaw:20261003T141500
+SUMMARY:Wyjazd na mecz: AP Merchel II Kolbudy
+LOCATION:Jaguar - AP Merchel II Kolbudy
+URL:https://www.google.com/maps/dir/?api=1&origin=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&destination=AP+Merchel+II+Kolbudy&travelmode=driving
+DESCRIPTION:Trasa: Jaguar -> AP Merchel II Kolbudy\nCzas dojazdu: ok. 60 min\nMapy Google: https://www.google.com/maps/dir/?api=1&origin=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&destination=AP+Merchel+II+Kolbudy&travelmode=driving
 END:VEVENT
 BEGIN:VEVENT
-UID:e1a456e42364b8c1553672b3c8462dff@jaguar
-DTSTAMP:20260620T033115Z
-DTSTART;TZID=Europe/Warsaw:20260426T104500
-DTEND;TZID=Europe/Warsaw:20260426T133000
-SUMMARY:Jaguar V Gdańsk AP - Gryf Tczew MKS
-LOCATION:Jaguar V Gdańsk AP
-URL:https://www.pomorskifutbol.pl/mecze.php?id=4623&id_klub=7470
-DESCRIPTION:Mecz: Jaguar V Gdańsk AP - Gryf Tczew MKS\nRozgrzewka: 10:45\nStart: 11:30\nKoniec: 13:30\nLink: https://www.pomorskifutbol.pl/mecze.php?id=4623&id_klub=7470
+UID:9861460053edaa088bb00c469435c392-return@jaguar
+DTSTAMP:20260824T182007Z
+DTSTART;TZID=Europe/Warsaw:20261003T170000
+DTEND;TZID=Europe/Warsaw:20261003T180000
+SUMMARY:Powrót z meczu: AP Merchel II Kolbudy
+LOCATION:AP Merchel II Kolbudy - Jaguar
+URL:https://www.google.com/maps/dir/?api=1&origin=AP+Merchel+II+Kolbudy&destination=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&travelmode=driving
+DESCRIPTION:Trasa: AP Merchel II Kolbudy -> Jaguar\nCzas powrotu: ok. 60 min\nMapy Google: https://www.google.com/maps/dir/?api=1&origin=AP+Merchel+II+Kolbudy&destination=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&travelmode=driving
 END:VEVENT
 BEGIN:VEVENT
-UID:6ee99f8e9ef1c09af778819fc90b5915@jaguar
-DTSTAMP:20260620T033115Z
-DTSTART;TZID=Europe/Warsaw:20260502T101500
-DTEND;TZID=Europe/Warsaw:20260502T130000
-SUMMARY:Morze Stegna - Jaguar V Gdańsk AP
-LOCATION:Morze Stegna
-URL:https://www.pomorskifutbol.pl/mecze.php?id=4623&id_klub=7470
-DESCRIPTION:Mecz: Morze Stegna - Jaguar V Gdańsk AP\nRozgrzewka: 10:15\nStart: 11:00\nKoniec: 13:00\nLink: https://www.pomorskifutbol.pl/mecze.php?id=4623&id_klub=7470
+UID:d7c4ac5957b23602a5dda9cc809782d7@jaguar
+DTSTAMP:20260824T182007Z
+DTSTART;TZID=Europe/Warsaw:20261010T111500
+DTEND;TZID=Europe/Warsaw:20261010T140000
+SUMMARY:Jaguar IV Gdańsk AP - Unia II Tczew
+LOCATION:Jaguar IV Gdańsk AP
+URL:https://www.pomorskifutbol.pl/mecze.php?id=4805&id_klub=7085
+DESCRIPTION:Mecz: Jaguar IV Gdańsk AP - Unia II Tczew\nRozgrzewka: 11:15\nStart: 12:00\nKoniec: 14:00\nLink: https://www.pomorskifutbol.pl/mecze.php?id=4805&id_klub=7085
 END:VEVENT
 BEGIN:VEVENT
-UID:6ee99f8e9ef1c09af778819fc90b5915-travel@jaguar
-DTSTAMP:20260620T033115Z
-DTSTART;TZID=Europe/Warsaw:20260502T091500
-DTEND;TZID=Europe/Warsaw:20260502T101500
-SUMMARY:Wyjazd na mecz: Morze Stegna
-LOCATION:Jaguar - Morze Stegna
-URL:https://www.google.com/maps/dir/?api=1&origin=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&destination=Morze+Stegna&travelmode=driving
-DESCRIPTION:Trasa: Jaguar -> Morze Stegna\nCzas dojazdu: ok. 60 min\nMapy Google: https://www.google.com/maps/dir/?api=1&origin=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&destination=Morze+Stegna&travelmode=driving
+UID:b2845d73387e3d2864c8b78b15e5f706@jaguar
+DTSTAMP:20260824T182007Z
+DTSTART;TZID=Europe/Warsaw:20261017T101500
+DTEND;TZID=Europe/Warsaw:20261017T130000
+SUMMARY:Osiczanka Osice - Jaguar IV Gdańsk AP
+LOCATION:Osiczanka Osice
+URL:https://www.pomorskifutbol.pl/mecze.php?id=4805&id_klub=7085
+DESCRIPTION:Mecz: Osiczanka Osice - Jaguar IV Gdańsk AP\nRozgrzewka: 10:15\nStart: 11:00\nKoniec: 13:00\nLink: https://www.pomorskifutbol.pl/mecze.php?id=4805&id_klub=7085
 END:VEVENT
 BEGIN:VEVENT
-UID:6ee99f8e9ef1c09af778819fc90b5915-return@jaguar
-DTSTAMP:20260620T033115Z
-DTSTART;TZID=Europe/Warsaw:20260502T130000
-DTEND;TZID=Europe/Warsaw:20260502T140000
-SUMMARY:Powrót z meczu: Morze Stegna
-LOCATION:Morze Stegna - Jaguar
-URL:https://www.google.com/maps/dir/?api=1&origin=Morze+Stegna&destination=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&travelmode=driving
-DESCRIPTION:Trasa: Morze Stegna -> Jaguar\nCzas powrotu: ok. 60 min\nMapy Google: https://www.google.com/maps/dir/?api=1&origin=Morze+Stegna&destination=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&travelmode=driving
+UID:b2845d73387e3d2864c8b78b15e5f706-travel@jaguar
+DTSTAMP:20260824T182007Z
+DTSTART;TZID=Europe/Warsaw:20261017T091500
+DTEND;TZID=Europe/Warsaw:20261017T101500
+SUMMARY:Wyjazd na mecz: Osiczanka Osice
+LOCATION:Jaguar - Osiczanka Osice
+URL:https://www.google.com/maps/dir/?api=1&origin=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&destination=Osiczanka+Osice&travelmode=driving
+DESCRIPTION:Trasa: Jaguar -> Osiczanka Osice\nCzas dojazdu: ok. 60 min\nMapy Google: https://www.google.com/maps/dir/?api=1&origin=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&destination=Osiczanka+Osice&travelmode=driving
 END:VEVENT
 BEGIN:VEVENT
-UID:6cc2243e6d553a82d43adafdc6029f9e@jaguar
-DTSTAMP:20260620T033115Z
-DTSTART;TZID=Europe/Warsaw:20260510T123000
-DTEND;TZID=Europe/Warsaw:20260510T151500
-SUMMARY:Jaguar V Gdańsk AP - Błękitni Stare Pole
-LOCATION:Jaguar V Gdańsk AP
-URL:https://www.pomorskifutbol.pl/mecze.php?id=4623&id_klub=7470
-DESCRIPTION:Mecz: Jaguar V Gdańsk AP - Błękitni Stare Pole\nRozgrzewka: 12:30\nStart: 13:15\nKoniec: 15:15\nLink: https://www.pomorskifutbol.pl/mecze.php?id=4623&id_klub=7470
+UID:b2845d73387e3d2864c8b78b15e5f706-return@jaguar
+DTSTAMP:20260824T182007Z
+DTSTART;TZID=Europe/Warsaw:20261017T130000
+DTEND;TZID=Europe/Warsaw:20261017T140000
+SUMMARY:Powrót z meczu: Osiczanka Osice
+LOCATION:Osiczanka Osice - Jaguar
+URL:https://www.google.com/maps/dir/?api=1&origin=Osiczanka+Osice&destination=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&travelmode=driving
+DESCRIPTION:Trasa: Osiczanka Osice -> Jaguar\nCzas powrotu: ok. 60 min\nMapy Google: https://www.google.com/maps/dir/?api=1&origin=Osiczanka+Osice&destination=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&travelmode=driving
 END:VEVENT
 BEGIN:VEVENT
-UID:0e3a8598f971c392ee1694c778d75768@jaguar
-DTSTAMP:20260620T033115Z
-DTSTART;TZID=Europe/Warsaw:20260603T151500
-DTEND;TZID=Europe/Warsaw:20260603T180000
-SUMMARY:Beniaminek 03 IV Starogard Gdański - Jaguar V Gdańsk AP
-LOCATION:Beniaminek 03 IV Starogard Gdański
-URL:https://www.pomorskifutbol.pl/mecze.php?id=4623&id_klub=7470
-DESCRIPTION:Mecz: Beniaminek 03 IV Starogard Gdański - Jaguar V Gdańsk AP\nRozgrzewka: 15:15\nStart: 16:00\nKoniec: 18:00\nLink: https://www.pomorskifutbol.pl/mecze.php?id=4623&id_klub=7470
+UID:b1f02432f19795e53c2df4ae03bc63bd@jaguar
+DTSTAMP:20260824T182007Z
+DTSTART;TZID=Europe/Warsaw:20261024T111500
+DTEND;TZID=Europe/Warsaw:20261024T140000
+SUMMARY:Jaguar IV Gdańsk AP - Orzeł Trąbki Wielkie
+LOCATION:Jaguar IV Gdańsk AP
+URL:https://www.pomorskifutbol.pl/mecze.php?id=4805&id_klub=7085
+DESCRIPTION:Mecz: Jaguar IV Gdańsk AP - Orzeł Trąbki Wielkie\nRozgrzewka: 11:15\nStart: 12:00\nKoniec: 14:00\nLink: https://www.pomorskifutbol.pl/mecze.php?id=4805&id_klub=7085
 END:VEVENT
 BEGIN:VEVENT
-UID:0e3a8598f971c392ee1694c778d75768-travel@jaguar
-DTSTAMP:20260620T033115Z
-DTSTART;TZID=Europe/Warsaw:20260603T141500
-DTEND;TZID=Europe/Warsaw:20260603T151500
-SUMMARY:Wyjazd na mecz: Beniaminek 03 IV Starogard Gdański
-LOCATION:Jaguar - Beniaminek 03 IV Starogard Gdański
-URL:https://www.google.com/maps/dir/?api=1&origin=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&destination=Beniaminek+03+IV+Starogard+Gda%C5%84ski&travelmode=driving
-DESCRIPTION:Trasa: Jaguar -> Beniaminek 03 IV Starogard Gdański\nCzas dojazdu: ok. 60 min\nMapy Google: https://www.google.com/maps/dir/?api=1&origin=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&destination=Beniaminek+03+IV+Starogard+Gda%C5%84ski&travelmode=driving
+UID:82c1bcd19b84eef7728aaa8bf647d350@jaguar
+DTSTAMP:20260824T182007Z
+DTSTART;TZID=Europe/Warsaw:20261107T111500
+DTEND;TZID=Europe/Warsaw:20261107T140000
+SUMMARY:Czarni Pruszcz Gdański - Jaguar IV Gdańsk AP
+LOCATION:Czarni Pruszcz Gdański
+URL:https://www.pomorskifutbol.pl/mecze.php?id=4805&id_klub=7085
+DESCRIPTION:Mecz: Czarni Pruszcz Gdański - Jaguar IV Gdańsk AP\nRozgrzewka: 11:15\nStart: 12:00\nKoniec: 14:00\nLink: https://www.pomorskifutbol.pl/mecze.php?id=4805&id_klub=7085
 END:VEVENT
 BEGIN:VEVENT
-UID:0e3a8598f971c392ee1694c778d75768-return@jaguar
-DTSTAMP:20260620T033115Z
-DTSTART;TZID=Europe/Warsaw:20260603T180000
-DTEND;TZID=Europe/Warsaw:20260603T190000
-SUMMARY:Powrót z meczu: Beniaminek 03 IV Starogard Gdański
-LOCATION:Beniaminek 03 IV Starogard Gdański - Jaguar
-URL:https://www.google.com/maps/dir/?api=1&origin=Beniaminek+03+IV+Starogard+Gda%C5%84ski&destination=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&travelmode=driving
-DESCRIPTION:Trasa: Beniaminek 03 IV Starogard Gdański -> Jaguar\nCzas powrotu: ok. 60 min\nMapy Google: https://www.google.com/maps/dir/?api=1&origin=Beniaminek+03+IV+Starogard+Gda%C5%84ski&destination=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&travelmode=driving
+UID:82c1bcd19b84eef7728aaa8bf647d350-travel@jaguar
+DTSTAMP:20260824T182007Z
+DTSTART;TZID=Europe/Warsaw:20261107T101500
+DTEND;TZID=Europe/Warsaw:20261107T111500
+SUMMARY:Wyjazd na mecz: Czarni Pruszcz Gdański
+LOCATION:Jaguar - Czarni Pruszcz Gdański
+URL:https://www.google.com/maps/dir/?api=1&origin=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&destination=Czarni+Pruszcz+Gda%C5%84ski&travelmode=driving
+DESCRIPTION:Trasa: Jaguar -> Czarni Pruszcz Gdański\nCzas dojazdu: ok. 60 min\nMapy Google: https://www.google.com/maps/dir/?api=1&origin=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&destination=Czarni+Pruszcz+Gda%C5%84ski&travelmode=driving
 END:VEVENT
 BEGIN:VEVENT
-UID:a09d3ab3b6d899d6ee4a3556e3607fb5@jaguar
-DTSTAMP:20260620T033115Z
-DTSTART;TZID=Europe/Warsaw:20260517T121500
-DTEND;TZID=Europe/Warsaw:20260517T150000
-SUMMARY:Jaguar V Gdańsk AP - Pogoń Prabuty
-LOCATION:Jaguar V Gdańsk AP
-URL:https://www.pomorskifutbol.pl/mecze.php?id=4623&id_klub=7470
-DESCRIPTION:Mecz: Jaguar V Gdańsk AP - Pogoń Prabuty\nRozgrzewka: 12:15\nStart: 13:00\nKoniec: 15:00\nLink: https://www.pomorskifutbol.pl/mecze.php?id=4623&id_klub=7470
-END:VEVENT
-BEGIN:VEVENT
-UID:78a5ed12f001a1add51e22897d889618@jaguar
-DTSTAMP:20260620T033115Z
-DTSTART;TZID=Europe/Warsaw:20260523T161500
-DTEND;TZID=Europe/Warsaw:20260523T190000
-SUMMARY:MKP Szlachta - Jaguar V Gdańsk AP
-LOCATION:MKP Szlachta
-URL:https://www.pomorskifutbol.pl/mecze.php?id=4623&id_klub=7470
-DESCRIPTION:Mecz: MKP Szlachta - Jaguar V Gdańsk AP\nRozgrzewka: 16:15\nStart: 17:00\nKoniec: 19:00\nLink: https://www.pomorskifutbol.pl/mecze.php?id=4623&id_klub=7470
-END:VEVENT
-BEGIN:VEVENT
-UID:78a5ed12f001a1add51e22897d889618-travel@jaguar
-DTSTAMP:20260620T033115Z
-DTSTART;TZID=Europe/Warsaw:20260523T151500
-DTEND;TZID=Europe/Warsaw:20260523T161500
-SUMMARY:Wyjazd na mecz: MKP Szlachta
-LOCATION:Jaguar - MKP Szlachta
-URL:https://www.google.com/maps/dir/?api=1&origin=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&destination=MKP+Szlachta&travelmode=driving
-DESCRIPTION:Trasa: Jaguar -> MKP Szlachta\nCzas dojazdu: ok. 60 min\nMapy Google: https://www.google.com/maps/dir/?api=1&origin=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&destination=MKP+Szlachta&travelmode=driving
-END:VEVENT
-BEGIN:VEVENT
-UID:78a5ed12f001a1add51e22897d889618-return@jaguar
-DTSTAMP:20260620T033115Z
-DTSTART;TZID=Europe/Warsaw:20260523T190000
-DTEND;TZID=Europe/Warsaw:20260523T200000
-SUMMARY:Powrót z meczu: MKP Szlachta
-LOCATION:MKP Szlachta - Jaguar
-URL:https://www.google.com/maps/dir/?api=1&origin=MKP+Szlachta&destination=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&travelmode=driving
-DESCRIPTION:Trasa: MKP Szlachta -> Jaguar\nCzas powrotu: ok. 60 min\nMapy Google: https://www.google.com/maps/dir/?api=1&origin=MKP+Szlachta&destination=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&travelmode=driving
-END:VEVENT
-BEGIN:VEVENT
-UID:275f8969eb5cc8e62c5200e72dbcbd35@jaguar
-DTSTAMP:20260620T033115Z
-DTSTART;TZID=Europe/Warsaw:20260527T184500
-DTEND;TZID=Europe/Warsaw:20260527T213000
-SUMMARY:Jaguar V Gdańsk AP - AP Deyna Starogard Gdański
-LOCATION:Jaguar V Gdańsk AP
-URL:https://www.pomorskifutbol.pl/mecze.php?id=4623&id_klub=7470
-DESCRIPTION:Mecz: Jaguar V Gdańsk AP - AP Deyna Starogard Gdański\nRozgrzewka: 18:45\nStart: 19:30\nKoniec: 21:30\nLink: https://www.pomorskifutbol.pl/mecze.php?id=4623&id_klub=7470
+UID:82c1bcd19b84eef7728aaa8bf647d350-return@jaguar
+DTSTAMP:20260824T182007Z
+DTSTART;TZID=Europe/Warsaw:20261107T140000
+DTEND;TZID=Europe/Warsaw:20261107T150000
+SUMMARY:Powrót z meczu: Czarni Pruszcz Gdański
+LOCATION:Czarni Pruszcz Gdański - Jaguar
+URL:https://www.google.com/maps/dir/?api=1&origin=Czarni+Pruszcz+Gda%C5%84ski&destination=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&travelmode=driving
+DESCRIPTION:Trasa: Czarni Pruszcz Gdański -> Jaguar\nCzas powrotu: ok. 60 min\nMapy Google: https://www.google.com/maps/dir/?api=1&origin=Czarni+Pruszcz+Gda%C5%84ski&destination=ul.+Budowlanych+49%2C+80-298+Gda%C5%84sk&travelmode=driving
 END:VEVENT
 END:VCALENDAR
